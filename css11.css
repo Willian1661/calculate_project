@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&family=Raleway&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Noto Serif Georgian', serif;
+}
+.all_body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+    url('https://img.freepik.com/fotos-gratis/vista-de-cima-de-uma-mesa-de-trabalho-material-de-escritorio-feminino_1163-2584.jpg?w=2000'),
+    center/cover no-repeat;
+}
+
+.calc_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    box-shadow: 35px 20px 25px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: 500px;
+    background: #3f3f3f;
+}
+
+.js-result {
+    width: 460px;
+    border: none;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px 20px 40px 20px;
+    border-radius: 8px 8px 0 0;
+    font-size: 2.5rem;
+    text-align: right;
+    user-select: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons button {
+    padding: 25px;
+    background-color: #fafafa;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: .0.5s all linear;
+    border-radius: 4px;
+    user-select: none;
+    margin: 4px;
+}
+.buttons button:nth-child(4n + 1){
+    margin-left: 6px;
+}
+.buttons .js-btn-iniciais{
+    background: #78787a;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.buttons .js-btn-iniciais:hover{
+    background: #7b797a;
+}
+.buttons button:nth-child(4n -4){
+    background: #ff9e0b;
+    border:none;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+.buttons button:nth-child(4n -4):hover{
+background: #c97c02;
+}
+.buttons button:nth-child(20){
+    background: #ff9e0b;
+    border:none;
+    border-radius: 0 0 4px 0;
+}
+.buttons button:nth-child(20):hover{
+    background: #c97c02;
+    border-radius: 0 0 4px 0;
+}
+.buttons button:nth-child(1){
+    background: #fd473d;
+    border:none;
+    border-radius: 4px;
+}
+.buttons button:nth-child(1):hover{
+    background: #ff584f;
+    border:none;
+    border-radius: 0;
+}
+.buttons .js-btn-bottom{
+margin-bottom: 8px;
+}
+
+
+.buttons button:hover {
+    background-color: fafafa;
+    opacity: .6;
+}
+
+.buttons button:active {
+    background-color: rgba(7, 7, 7, 0.3);
+}
+
+button.equal {
+    background-color: #005300;
+}
+
+button.equal:hover {
+    background-color: #005300;
+    opacity: .6;
+    border-radius: 4px;
+}
+
+button.equal:active {
+    background-color: rgba(7, 7, 7, 0.3);
+    transition: .0.5s all linear;
+}
+
+button.DEL {
+    background-color: #a31300;
+    border-radius: 0 0 4px 4px;
+}
+
+button.DEL:hover {
+    background-color: #a31300;
+    opacity: .6;
+    border-radius: 0 0 4px 4px;
+}
+
+button.js-btn-DEL:active {
+    background-color: rgba(7, 7, 7, 0.3);
+    transition: .0.5s all linear;
+}
+@media screen and (min-width: 2560px) {
+    .calc_body{
+        width: 400px;
+    }
+    .js-result {
+        width: 360px;
+        border: none;
+    }
+    .buttons button{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calc_body{
+        width: 400px;
+    }
+    .js-result {
+        width: 360px;
+        border: none;
+    }
+    .buttons button{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .calc_body{
+        width: 300px;
+    }
+    .js-result {
+        width: 260px;
+        border: none;
+    }
+    .buttons button{
+        padding: 10px;
+    }
+}
