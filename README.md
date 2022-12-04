@@ -3,9 +3,9 @@ This repository will be for me add what i am currently learning, examples of thi
 Here are some examples of what i did:
 
 **5º Calculator:https://github.com/Willian1661/learning-code/tree/master/code_projects/%C2%BAcalculate**
-<img src="zpictures/ºcalculate_examples/ºcalculate_examples2.png" width="290" height="160"> 
-<img src="zpictures/ºcalculate_examples/ºcalculate_examples03.png" width="230"> 
-<img src="zpictures/ºcalculate_examples/ºcalculate_examples04.png" width="230"> <img src="zpictures/ºcalculate_examples/ºcalculate_examples02.png" width="230">
+<img src="https://github.com/Willian1661/learning-code/blob/master/zpictures/%C2%BAcalculate_examples/%C2%BAcalculate_examples02.png" width="260" height="160"> 
+<img src="https://github.com/Willian1661/learning-code/blob/master/zpictures/%C2%BAcalculate_examples/%C2%BAcalculate_examples03.png" width="230"> 
+<img src="https://github.com/Willian1661/learning-code/blob/master/zpictures/%C2%BAcalculate_examples/%C2%BAcalculate_examples04.png" width="230"> <img src="https://github.com/Willian1661/learning-code/blob/master/zpictures/%C2%BAcalculate_examples/%C2%BAcalculate_examples2.png" width="260">
 ## Front end:
 - HTML / CSS / JS 
 <hr>
