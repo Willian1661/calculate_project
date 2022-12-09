@@ -1,0 +1,23 @@
+{
+  "name": "calculate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Willian1661/calculate_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Willian1661/calculate_project/issues"
+  },
+  "homepage": "https://github.com/Willian1661/calculate_project#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
