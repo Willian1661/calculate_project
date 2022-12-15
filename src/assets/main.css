@@ -13,7 +13,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background: radial-gradient(circle, rgba(65,65,65,0.4) 0%, rgba(23,23,23,0.6) 40%, rgba(0,0,0,0.8) 100%),
-    url('../public/plano_de_fundo.jpg');
+    url('/public/background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
