@@ -1,3 +1,7 @@
+import _ from 'lodash';
+import './main.css'; 
+
+
 let btnReuslt = document.querySelector(".js-result")
 let btnMaMe = document.querySelector(".js-btn-ma-me")
 let btnClearAll = document.querySelector(".js-btn-AC")
@@ -65,3 +69,8 @@ function gerenciador() {
     });
 }
 gerenciador();
+
+function export_test(){
+    console.log("export_test");
+}
+export default export_test
