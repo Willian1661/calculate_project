@@ -6,15 +6,17 @@
     outline: 0;
     font-family: 'Noto Serif Georgian', serif;
 }
-.all_body{
+body{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
-    url('https://img.freepik.com/fotos-gratis/vista-de-cima-de-uma-mesa-de-trabalho-material-de-escritorio-feminino_1163-2584.jpg?w=2000'),
-    center/cover no-repeat;
+    background: radial-gradient(circle, rgba(65,65,65,0.4) 0%, rgba(23,23,23,0.6) 40%, rgba(0,0,0,0.8) 100%),
+    url('/src/assets/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .calc_body {
