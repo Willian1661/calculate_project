@@ -5,6 +5,7 @@ module.exports = {
   mode: 'development',
     entry:{
       bundle: './src/assets/main.js',
+      components: './src/assets/components.js',
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

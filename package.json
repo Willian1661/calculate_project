@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack",
-    "lint":"npx eslint ./src"
+    "lint": "npx eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "eslint-plugin-jest": "^27.1.7",
     "lodash": "^4.17.21"
   }
 }
