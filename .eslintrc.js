@@ -1,9 +1,10 @@
 module.exports = {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2022": true,
+		"node": true
 	},
-	"extends": ["eslint:recommended", "prettier"],
+	"extends": "eslint:recommended",
 	"overrides": [],
 	"parserOptions": {
 		"ecmaVersion": "latest",
@@ -22,9 +23,10 @@ module.exports = {
 		"no-duplicate-imports": "error",
         "no-else-return": "error",
         "no-empty-function": "error",
+		"no-case-declarations": "error",
 		"no-var": "warn",
 		"no-multiple-empty-lines": "error",
-		"eqeqeq": "error",
+		"eqeqeq": ["warn", "smart"],
 		"curly": "error",
 		"eol-last": [
 			"error", 

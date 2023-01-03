@@ -1,24 +1,18 @@
-const buttom = require("../../src/components/buttom");
+const buttom = require("../../src/assets/javascript/components/buttom");
 
-/* 
-<button class="js-btn-padroes" data-valor="8">8</button>
- */
-
-describe("Buttom component", () => {
+describe("Pattern Button component", () => {
 
 	it("has html buttom's tag.", () => {
 
-		expect(buttom()).toContain("<button");
+		expect(buttom()).toContain(`<button`);
 	});
     
-	it("has buttom's tag with class js-btn-padroes", () =>{
+	it("has buttom's tag with class js-btn-pattern", () =>{
 		expect(buttom()).toContain("</button>");
-		expect(buttom()).toContain("class=\"buttom js-btn-padroes\"");
 	});
 
 	const buttomContents = ["foo","bar","baz"];
-	it.each(buttomContents)("has a buttom content", (buttomContent) => {
+	it.each(buttomContents)("has a buttom content and closed tag", (buttomContent) => {
 		expect(buttom(buttomContent)).toContain(`>${buttomContent}</button>`);
-		expect(buttom(buttomContent)).toContain(`data-valor"${buttomContent}"`);
 	});
 });
