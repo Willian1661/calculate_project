@@ -1,98 +1,60 @@
 import "../../assets/main.css"; 
-const buttom = require("./components/buttom");
+const Button = require("../../components/button");
+document.querySelector("#Buttons").insertAdjacentHTML("beforeend", Button());
 
-let btnReuslt = document.querySelector(".js-result");
+const inputReuslt = document.querySelector(".js-result");
+const patternElements = document.querySelectorAll(".js-btn-pattern");
+const ClearAllElement = document.querySelector(".js-btn-ClearAll");
+const lessMoreElement = document.querySelector(".js-btn-less-more");
+const delElement = document.querySelector(".js-btn-Del");
+const equaElement = document.querySelector(".js-btn-equal");
 
-let buttoms = [
-	buttom("C"), buttom("+/-"),buttom("«"),buttom("%"), 
-	buttom("7"), buttom("8"),buttom("9"),buttom("/"), 
-	buttom("4"), buttom("5"),buttom("6"),buttom("*"), 
-	buttom("1"), buttom("2"),buttom("3"),buttom("+"),
-	buttom("."), buttom("-"),buttom("0"),buttom("=")
-];
+//-------------------- textContent of all buttons-----------------------------//
+ClearAllElement.textContent = "C";
+lessMoreElement.textContent = "+/-";
+delElement.textContent = "«";
+equaElement.textContent = "=";
+const actions_patterButtons = [
+	"%","7","8","9",
+	"/","4","5","6",
+	"*","1","2","3",
+	"+","-",".","0",];
 
-for (let i = 0; i < buttoms.length; i++) {
-	
-	document.querySelector("#buttoms").insertAdjacentHTML("beforeend", buttoms[i]);
-	
-	const elementPattern = document.querySelectorAll("button");
-	
-	elementPattern[i].classList.add("js-btn-pattern");
-	
-	//-----------------------// for initial/bottom Buttons //-----------------------//
-	if (elementPattern[i].classList !== "js-btn-pattern") {
+for (let j = 0; j < patternElements.length; j++) {
+	patternElements[j].textContent = actions_patterButtons[j];
+}
 
-		switch (elementPattern[i].textContent) {
-		case "C":{
-			elementPattern[i].classList.add("js-btn-iniciais");
-			elementPattern[i].classList.replace("js-btn-pattern","js-btn-ClearAll");
-			let initialElementClearAll = document.querySelector(".js-btn-iniciais.js-btn-ClearAll");
-			initialElementClearAll.addEventListener("click", () =>{
-				btnReuslt.value = "";
-			});
-			break;
-		}
-		case "+/-":{
-			elementPattern[i].classList.add("js-btn-iniciais");
-			elementPattern[i].classList.replace("js-btn-pattern","js-btn-less-more");
-			let initialElementLessMore = document.querySelector(".js-btn-iniciais.js-btn-less-more");
-			initialElementLessMore.addEventListener("click", () =>{
-				btnReuslt.value = btnReuslt.value * -1;
-			});
-			break;
-		}
-		case "«":{
-			elementPattern[i].classList.add("js-btn-iniciais");
-			elementPattern[i].classList.replace("js-btn-pattern","js-btn-Del");
-			let initialElementDell = document.querySelector(".js-btn-iniciais.js-btn-Del");
-			initialElementDell.addEventListener("click", () =>{
-				btnReuslt.value = btnReuslt.value.slice(0,-1);
-			});
-			break;
-		}			
-		case "=":{
-			elementPattern[i].classList.add("js-btn-bottom");
-			elementPattern[i].classList.replace("js-btn-pattern","js-btn-equal");
-			let elementEqual = document.querySelector(".js-btn-equal.js-btn-bottom");
-			elementEqual.addEventListener("click", () => {	
-				try {
-					btnReuslt.value = eval(btnReuslt.value);
-				} catch (error) {
-					console.log(error.Message);
-				}
-			});
-			break;
-		}			
-		}
-	}
+//------------------ for...loop for patter elements -------------------------//
+for (let i = 0; i < patternElements.length; i++) {
+	if (patternElements[i].classList.contains("js-btn-pattern")) {
+		patternElements[i].addEventListener("click", () => {
 
-	//-----------------------// for pattern Buttons //-----------------------//
-	if (elementPattern[i].classList == "js-btn-pattern") {
-	
-		elementPattern[i].addEventListener("click", () => {
-
-			let lastValueTyped = btnReuslt.value[btnReuslt.value.length - 1];
+			let lastValueTyped = inputReuslt.value[inputReuslt.value.length - 1];
 			if (lastValueTyped &&
 	!Number(lastValueTyped) &&
-	!Number(elementPattern[i].textContent) &&
-	lastValueTyped !== 0 &&
-	elementPattern[i].textContent !== 0
+	!Number(patternElements[i].textContent) &&
+	lastValueTyped !== "0" &&
+	patternElements[i].textContent !== "0"
 			) {
-				btnReuslt.value = btnReuslt.value.slice(0, -1);
+				inputReuslt.value = inputReuslt.value.slice(0, -1);
 			}
 
-			if (btnReuslt.value.length === 0 && !Number(elementPattern[i].textContent)) {
+			if (inputReuslt.value.length === 0 && !Number(patternElements[i].textContent)) {
 				return;
 			}
-			btnReuslt.value += elementPattern[i].textContent;
-			console.log(elementPattern[i].textContent);
+			inputReuslt.value += patternElements[i].textContent;
 		});
-		if (elementPattern[i].textContent == "%") {
-			elementPattern[i].classList.add("js-btn-iniciais");
-		}else if (elementPattern[i].textContent == "." ||
-elementPattern[i].textContent == "-" ||
-elementPattern[i].textContent == "0") {
-			elementPattern[i].classList.add("js-btn-bottom");
-		}
 	}
 }
+
+//----------------------  for the especial elements --------------------------//
+ClearAllElement.addEventListener("click", () => inputReuslt.value = "");
+
+lessMoreElement.addEventListener("click", () => {
+	if (inputReuslt.value.length === 0 && !Number(lessMoreElement.textContent)) {return;}
+	inputReuslt.value = inputReuslt.value * -1;
+});
+
+delElement.addEventListener("click", () => inputReuslt.value = inputReuslt.value.slice(0, -1));
+	
+equaElement.addEventListener("click", () => inputReuslt.value = eval(inputReuslt.value));

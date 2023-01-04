@@ -63,12 +63,12 @@ body{
 .buttons button:nth-child(4n + 1){
     margin-left: 6px;
 }
-.buttons .js-btn-iniciais{
+.buttons .js-btn-upper{
     background: #78787a;
     border-radius: 4px;
     margin-top: 8px;
 }
-.buttons .js-btn-iniciais:hover{
+.buttons .js-btn-upper:hover{
     background: #7b797a;
 }
 .buttons button:nth-child(4n -4){
