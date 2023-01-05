@@ -1,19 +1,18 @@
-const Button = require("../../src/components/button")
+const button = require("../../src/components/button")
 
-describe("Pattern Button component", () => {
+describe("Pattern button component", () => {
 
-	it("has html Button's tag.", () => {
+	it("has html button's tag.", () => {
 
-		expect(Button()).toContain(`<button`);
+		expect(button()).toContain(`<button`);
 	});
     
-	it("has Button's tag with class js-buttons", () =>{
-		expect(Button()).toContain("</button>");
-		expect(Button()).toContain("class=\"js-buttons\"");
+	it("passing html class to the component", () =>{
+		expect(button("bar","foo","baz")).toBe("<button class=\"foo baz\">bar</button>");
 	});
 
 	const ButtonContents = ['foo','bar','baz'];
-	it.each(ButtonContents)("has a Button content and closed tag", (ButtonContent) => {
-		expect(Button(ButtonContent)).toContain(`>${ButtonContent}</button>`);
+	it.each(ButtonContents)("has a button content and closed tag", (ButtonContent) => {
+		expect(button(ButtonContent,"foo","baz")).toContain(`>${ButtonContent}</button>`);
 	});
 });

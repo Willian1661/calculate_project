@@ -1,5 +1,5 @@
-function Button(textContent) {
+function button(textContent,htmlClass,cssClass) {
 
-	return `<button class="js-buttons">${textContent}</button>`;
+	return `<button class="${htmlClass} ${cssClass}">${textContent}</button>`;
 }
-module.exports = Button;
+module.exports = button;
