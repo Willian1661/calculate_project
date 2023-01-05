@@ -48,8 +48,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.buttons button {
-    padding: 25px;
+.buttons .js-buttons {
+    padding: 20px 0px 20px 0px;
     background-color: #fafafa;
     border: none;
     font-size: 1.5rem;
@@ -60,10 +60,10 @@ body{
     user-select: none;
     margin: 4px;
 }
-.buttons button:nth-child(4n + 1){
+.buttons .js-buttons:nth-child(4n + 1){
     margin-left: 6px;
 }
-.buttons .js-btn-upper{
+.buttons .js-buttons:nth-child(-n + 4){
     background: #78787a;
     border-radius: 4px;
     margin-top: 8px;
@@ -71,30 +71,30 @@ body{
 .buttons .js-btn-upper:hover{
     background: #7b797a;
 }
-.buttons button:nth-child(4n -4){
-    background: #ff9e0b;
+.buttons .js-buttons:nth-child(4n -4){
+    background: #ff9e0b !important;
     border:none;
     border-radius: 4px;
     margin-right: 6px;
 }
-.buttons button:nth-child(4n -4):hover{
+.buttons .js-buttons:nth-child(4n -4):hover{
 background: #c97c02;
 }
-.buttons button:nth-child(20){
+.buttons .js-buttons:nth-child(20){
     background: #ff9e0b;
     border:none;
     border-radius: 0 0 4px 0;
 }
-.buttons button:nth-child(20):hover{
+.buttons .js-buttons:nth-child(20):hover{
     background: #c97c02;
     border-radius: 0 0 4px 0;
 }
-.buttons button:nth-child(1){
-    background: #fd473d;
+.buttons .js-buttons:nth-child(1){
+    background: #fd473d !important;
     border:none;
     border-radius: 4px;
 }
-.buttons button:nth-child(1):hover{
+.buttons .js-buttons:nth-child(1):hover{
     background: #ff584f;
     border:none;
     border-radius: 0;
@@ -104,45 +104,15 @@ margin-bottom: 8px;
 }
 
 
-.buttons button:hover {
+.buttons .js-buttons:hover {
     background-color: fafafa;
     opacity: .6;
 }
 
-.buttons button:active {
+.buttons .js-buttons:active {
     background-color: rgba(7, 7, 7, 0.3);
 }
 
-button.equal {
-    background-color: #005300;
-}
-
-button.equal:hover {
-    background-color: #005300;
-    opacity: .6;
-    border-radius: 4px;
-}
-
-button.equal:active {
-    background-color: rgba(7, 7, 7, 0.3);
-    transition: .0.5s all linear;
-}
-
-button.DEL {
-    background-color: #a31300;
-    border-radius: 0 0 4px 4px;
-}
-
-button.DEL:hover {
-    background-color: #a31300;
-    opacity: .6;
-    border-radius: 0 0 4px 4px;
-}
-
-button.js-btn-DEL:active {
-    background-color: rgba(7, 7, 7, 0.3);
-    transition: .0.5s all linear;
-}
 @media screen and (min-width: 2560px) {
     .calc_body{
         width: 400px;
@@ -151,7 +121,7 @@ button.js-btn-DEL:active {
         width: 360px;
         border: none;
     }
-    .buttons button{
+    .buttons .js-buttons{
         padding: 20px;
     }
 }
@@ -164,7 +134,7 @@ button.js-btn-DEL:active {
         width: 360px;
         border: none;
     }
-    .buttons button{
+    .buttons .js-buttons{
         padding: 20px;
     }
 }
@@ -176,7 +146,7 @@ button.js-btn-DEL:active {
         width: 260px;
         border: none;
     }
-    .buttons button{
+    .buttons .js-buttons{
         padding: 10px;
     }
 }
