@@ -1,22 +1,22 @@
 import "../../assets/main.css"; 
-const Button = require("../../components/button");
+const button = require("../../components/button");
 const inputReuslt = document.querySelector(".js-result");
 
 //-------------------- textContent of all buttons-----------------------------//
 
 const buttonComponents = [
-	Button("C","js-clearAll","js-upper"),Button("+/-","js-lessMore","js-upper"),Button("«","js-del","js-upper"),Button("%","js-buttons","js-upper"),
-	Button("7","js-buttons",""),Button("8","js-buttons",""),Button("9","js-buttons",""),Button("/","js-buttons",""),
-	Button("4","js-buttons",""),Button("5","js-buttons",""),Button("6","js-buttons",""),Button("*","js-buttons",""),
-	Button("1","js-buttons",""),Button("2","js-buttons",""),Button("3","js-buttons",""),Button("+","js-buttons",""),
-	Button("0","js-buttons","js-bottom"),Button(".","js-buttons","js-bottom"),Button("=","js-equal","js-bottom"),Button("-","js-buttons","js-bottom"),
+	button("C","js-clearAll","js-upper"),button("+/-","js-lessMore","js-upper"),button("«","js-del","js-upper"),button("%","js-buttons","js-upper"),
+	button("7","js-buttons",""),button("8","js-buttons",""),button("9","js-buttons",""),button("/","js-buttons",""),
+	button("4","js-buttons",""),button("5","js-buttons",""),button("6","js-buttons",""),button("*","js-buttons",""),
+	button("1","js-buttons",""),button("2","js-buttons",""),button("3","js-buttons",""),button("+","js-buttons",""),
+	button("0","js-buttons","js-bottom"),button(".","js-buttons","js-bottom"),button("=","js-equal","js-bottom"),button("-","js-buttons","js-bottom"),
 ];
 
 //------------------ for...loop for patter elements -------------------------//
 
 for (let i = 0; i < buttonComponents.length; i++) {
 	
-	document.querySelector("#Buttons").insertAdjacentHTML("beforeend", buttonComponents[i]);
+	document.querySelector("#jsButtons").insertAdjacentHTML("beforeend", buttonComponents[i]);
 	const buttonElements = document.querySelectorAll(".js-buttons, .js-clearAll, .js-lessMore, .js-del, .js-equal");
 
 	if (buttonElements[i].innerText != "C" &&
