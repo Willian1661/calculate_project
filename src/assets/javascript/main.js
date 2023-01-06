@@ -12,6 +12,20 @@ const buttonComponents = [
 	button("0","js-buttons","js-bottom"),button(".","js-buttons","js-bottom"),button("=","js-equal","js-bottom"),button("-","js-buttons","js-bottom"),
 ];
 
+function getDuplicateElements(data) {
+	return data.filter((value,index) => {
+
+		if(data.indexOf(value) !== index){
+			for (let p = data.indexOf(value); p < index; p++) {
+				
+				data.pop()
+				
+			}
+		}
+	})
+}
+getDuplicateElements(buttonComponents);
+
 //------------------ for...loop for patter elements -------------------------//
 
 for (let i = 0; i < buttonComponents.length; i++) {
