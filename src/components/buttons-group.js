@@ -1,5 +1,7 @@
-function buttonsGroup(identifier) {
-
-	return `<div id="${identifier}"></div>`;
+function buttonsGroup(buttonsId,buttons) {		
+	return `
+	<div id="${buttonsId}">
+		${buttons.join('\n\t\t')}}
+	</div>`;
 }
 module.exports = buttonsGroup;

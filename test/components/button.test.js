@@ -1,5 +1,4 @@
 const button = require("../../src/components/button")
-const buttonsGroup = require("../../src/components/buttons-group")
 
 describe("Pattern button component", () => {
 
@@ -16,19 +15,8 @@ describe("Pattern button component", () => {
 	it.each(buttonContents)("has a button content and closed tag", (buttonContent) => {
 		expect(button(buttonContent,"foo")).toContain(`>${buttonContent}</button>`);
 	});
+
+	it("has a button with an optional class.", () =>{
+		expect(button("foo")).toBe("<button>foo</button>");
+	});
 });
-
-describe("pattern div component", () =>{
-
-	it("has html div's tag open", () =>{
-		expect(buttonsGroup()).toContain("<div ");
-	});
-	
-	it("passing html div to the component", () =>{
-		expect(buttonsGroup("bar")).toBe("<div id=\"bar\"></div>");
-	});
-	const divId = ['foo','bar','baz'];
-	it.each(divId)("passing html div to the component", (divId) =>{
-		expect(buttonsGroup(divId)).toContain(`id=\"${divId}\"></div>`);
-	});
-})

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pattern div component is passing dynamic buttons 1`] = `
+"
+	<div id="buttonsId">
+		<button class="fooClass">foo</button>
+		<button class="bazClass">baz</button>}
+	</div>"
+`;
