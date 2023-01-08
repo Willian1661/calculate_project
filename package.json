@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack",
-    "lint":"npx eslint ./src"
+    "watch": "npx webpack watch --mode development",
+    "lint": "npx eslint ./src",
+    "lint:fix": "npx eslint --fix ./src",
+    "server": "npx webpack server --open"
   },
   "repository": {
     "type": "git",
@@ -28,9 +31,11 @@
     "prettier": "^2.8.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "eslint-plugin-jest": "^27.1.7",
     "lodash": "^4.17.21"
   }
 }
