@@ -1,8 +1,8 @@
-const calculator = require("../../src/components/calculator-component")
+const calculator = require("../../src/components/calculator")
 
 describe("calculator screen component", () =>{
     
-    it("is passing calculator screen", () => {
+    it("is passing calculator component", () => {
         expect(calculator("body-calc-id")).toMatchSnapshot()
     });
 
