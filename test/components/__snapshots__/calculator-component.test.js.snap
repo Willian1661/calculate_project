@@ -7,8 +7,26 @@ exports[`calculator screen component is passing calculator screen 1`] = `
             <input type="text" placeholder="0" id="input-screen-id">
         </div>
         <div id="buttons-dIv-id">
-            <button class="buttons-class">buttons-content</button>
-            <button class="buttons-class">buttons-content</button>
+        <button class="clear-all upper left">C</button>
+        <button class="less-more upper">+/-</button>
+        <button class="del upper">CE</button>
+        <button class="upper right">%</button>
+        <button class="left">7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="right">/</button>
+        <button class="left">4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="right">*</button>
+        <button class="left">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="right">+</button>
+        <button class="bottom left">0</button>
+        <button class="bottom">.</button>
+        <button class="equal bottom">=</button>
+        <button class="bottom right">-</button>
         </div>
     </div>
     "
