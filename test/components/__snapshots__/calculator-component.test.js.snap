@@ -7,8 +7,8 @@ exports[`calculator screen component is passing calculator screen 1`] = `
             <input type="text" placeholder="0" id="input-screen-id">
         </div>
         <div id="buttons-dIv-id">
-            <button class="fooClass">foo</button>
-			<button class="bazClass">baz</button>}
+            <button class="buttons-class">buttons-content</button>
+            <button class="buttons-class">buttons-content</button>
         </div>
     </div>
     "
