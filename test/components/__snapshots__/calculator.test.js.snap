@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculator screen component is passing calculator component 1`] = `
+"
+    <div id="body-calc-id">
+        <div id="screen">
+            <input type="text" placeholder="0" id="input-screen-id">
+        </div>
+        <div id="buttons-dIv-id">
+            
+		<div id="buttons-top">
+			<button class="clear-all upper left">C</button>
+			<button class="bottom">%</button>
+			<button class="del upper">CE</button>}
+		</div>
+            
+		<div id="buttons-middle">
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>}
+		</div>
+            
+		<div id="buttons-right">
+			<button class="right">/</button>
+			<button class="right">*</button>
+			<button class="right">+</button>
+			<button class="bottom right">-</button>
+			<button class="equal bottom">=</button>}
+		</div>
+            
+		<div id="buttons-bottom">
+			<button class="bottom">0</button>
+			<button class="bottom">.</button>
+			<button class="less-more upper">+/-</button>}
+		</div>
+        </div>
+    </div>
+    "
+`;
