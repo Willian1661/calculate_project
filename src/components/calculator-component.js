@@ -1,10 +1,12 @@
-function calculator(bodyId,screenId,inputId,buttonsGroup) {
+function calculator(id,buttons) {
     return`
-    <div id="${bodyId}">
-        <div id="${screenId}">
-            <input type="text" placeholder="0" id="${inputId}">
+    <div id="${id}">
+        <div id="screen">
+            <input type="text" placeholder="0" id="input-screen-id">
         </div>
-            ${buttonsGroup}
+        <div id="buttons-dIv-id">
+            ${buttons.join('\n\t\t\t')}}
+        </div>
     </div>
     `;
 }

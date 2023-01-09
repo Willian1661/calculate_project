@@ -1,5 +1,4 @@
 const button = require("../../src/components/button");
-const buttonsGroup = require("../../src/components/buttons-group")
 const calculatorScreen = require("../../src/components/calculator-component")
 
 describe("calculator screen component", () =>{
@@ -9,7 +8,7 @@ describe("calculator screen component", () =>{
         button("baz","bazClass")
     ]
     it("is passing calculator screen", () => {
-        expect(calculatorScreen("body-calc-id","div-screen-id","screen-id",buttonsGroup("buttons-id",buttons))).toMatchSnapshot()
+        expect(calculatorScreen("body-calc-id",buttons)).toMatchSnapshot()
     });
 
 })
