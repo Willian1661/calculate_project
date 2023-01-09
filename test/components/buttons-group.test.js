@@ -8,7 +8,7 @@ describe("pattern div component", () =>{
         button("foo","fooClass"),
         button("baz","bazClass")
     ]
-        expect(buttonsGroup("buttonsId",buttons)).toMatchSnapshot()
+        expect(buttonsGroup("buttons-id",buttons)).toMatchSnapshot()
     });
 	
 })

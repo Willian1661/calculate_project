@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`calculator screen component is passing calculator screen 1`] = `
-"
-    <div id="baz">
-        <input type="text" placeholder="0" id="foo">
-    </div>
-    "
-`;
