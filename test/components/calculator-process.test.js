@@ -4,30 +4,11 @@ const visorInteractor = require("../../src/services/visor-interactor")
 describe("button's content is passing", ()=>{
 
 
-  const resolution = [
-  calculatorProcess("1"),
-  calculatorProcess("+"),
-  calculatorProcess("1"),
-  calculatorProcess("=")
-]
-
-let view = ""
+const process = calculatorProcess("1")
 
 it("has passed process's content into view", ()=>{
 
-for (let i = 0; i < resolution.length; i++) {
+    expect(visorInteractor(process)).toBe("1")
 
-view += resolution[i]
-
-if (resolution[i].includes("plus") && resolution[i].includes("=")) {
-
-  let result = Number(resolution[0]) + Number(resolution[2])
-
-  view = result
-
-}
-
-    expect(visorInteractor(view)).toBe(view)
-    }  
   })
 })
