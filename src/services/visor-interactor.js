@@ -1,7 +1,6 @@
 function visorInteractor(textContent) {
-if (textContent !== undefined) {
-   return true
-}
+
+   const visor = textContent
 
 }
-module.exports = visorInteractor
+exports.visorInteractor = visorInteractor

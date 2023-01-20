@@ -1,7 +1,11 @@
-function calculatorProcess(componentContent) {
+visorInteractor  = require("./visor-interactor").visorInteractor;
 
+function calculatorProcess(componentContent) {
+if (componentContent !== undefined) {
+       visorInteractor(componentContent)
        return componentContent
+}
 
 }
 
-module.exports = calculatorProcess;
+exports.calculatorProcess = calculatorProcess;
