@@ -1,6 +1,7 @@
 function visorInteractor(textContent) {
-
-   return textContent
+if (textContent !== undefined) {
+   return true
+}
 
 }
 module.exports = visorInteractor
