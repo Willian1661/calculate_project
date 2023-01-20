@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`click test 's working click event 1`] = `"1 "`;
-
-exports[`click test 's working click event 2`] = `"1 plus "`;
-
-exports[`click test 's working click event 3`] = `"1 plus 1 "`;
-
-exports[`click test 's working click event 4`] = `"1 plus 1 = "`;
