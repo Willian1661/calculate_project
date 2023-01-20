@@ -3,10 +3,10 @@
 exports[`calculator screen component is passing calculator component 1`] = `
 "
     <div id="body-calc-id">
-        <div id="screen">
-            <input type="text" placeholder="0" id="input-screen-id">
-        </div>
-        <div id="buttons-dIv-id">
+
+        <input type="text" placeholder="0" id="calculator-screen">
+
+        <div id="calculator-buttons">
             
 		<div id="buttons-top">
 			<button class="clear-all upper left">C</button>

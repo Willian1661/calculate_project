@@ -6,4 +6,4 @@ describe("calculator screen component", () =>{
         expect(calculator("body-calc-id")).toMatchSnapshot()
     });
 
-})
+});

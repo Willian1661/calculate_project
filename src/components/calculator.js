@@ -24,13 +24,13 @@ const buttonsBottom = buttonsGroup("buttons-bottom",[
         button("0","bottom"),
         button(".","bottom"),
         button("+/-","less-more upper"),
-])
+]);
     return`
     <div id="${id}">
-        <div id="screen">
-            <input type="text" placeholder="0" id="input-screen-id">
-        </div>
-        <div id="buttons-dIv-id">
+
+        <input type="text" placeholder="0" id="calculator-screen">
+
+        <div id="calculator-buttons">
             ${buttonsTop}
             ${buttonsMiddle}
             ${buttonsRight}
