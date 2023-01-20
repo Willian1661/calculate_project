@@ -1,10 +1,9 @@
-calculatorProcess = require("../../src/services/calculator-process").calculatorProcess
-visorInteractor = require("../../src/services/visor-interactor").visorInteractor
-
-visorInteractor = jest.fn()
+jest.mock("../../src/services/visor-interactor")
+const calculatorProcess = require("../../src/services/calculator-process")
+const visorInteractor = require("../../src/services/visor-interactor")
 
 describe("button's content is passing", () => {
-
+  
   it("has passed process's content into view", () => {
 
     expect(calculatorProcess("1")).toBe("1");
@@ -12,3 +11,4 @@ describe("button's content is passing", () => {
     expect(visorInteractor).toHaveBeenCalledTimes(1);
   });
 });
+

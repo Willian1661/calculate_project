@@ -1,11 +1,12 @@
-visorInteractor  = require("./visor-interactor").visorInteractor;
+const visorInteractor  = require("./visor-interactor");
 
 function calculatorProcess(componentContent) {
 if (componentContent !== undefined) {
        visorInteractor(componentContent)
        return componentContent
 }
+return componentContent
 
 }
 
-exports.calculatorProcess = calculatorProcess;
+module.exports = calculatorProcess
