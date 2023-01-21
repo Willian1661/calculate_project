@@ -26,6 +26,7 @@ module.exports = {
 		"no-case-declarations": "error",
 		"no-var": "warn",
 		"no-multiple-empty-lines": "error",
+		"no-mixed-spaces-and-tabs": ["error","smart-tabs"],
 		"eqeqeq": ["warn", "smart"],
 		"curly": "error",
 		"eol-last": [

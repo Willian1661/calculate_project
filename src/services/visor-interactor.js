@@ -1,6 +1,6 @@
 function visorInteractor(textContent) {
 
-   console.log(textContent);
+	console.log(textContent);
 
 }
-module.exports = visorInteractor
+module.exports = visorInteractor;
