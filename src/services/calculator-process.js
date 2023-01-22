@@ -15,7 +15,7 @@ function calculatorProcess(content,visor) {
 	}
 
 	if (memory2.includes("C")) {
-		memory2 = [];
+		memory2 = "";
 		visor(memory2);
 		return;
 	}
@@ -24,8 +24,8 @@ function calculatorProcess(content,visor) {
 		memory2 = String(Number((memory2[0])*-1));
 	}
 
-	if (memory2.includes("D")) {
-		memory2 = memory2.slice(0,-2); 
+	if (memory2.includes("Del")) {
+		memory2 = memory2.slice(0,-(memory2.length - 1)); 
 		console.log(memory2 + "hit Del");
 	}
 

@@ -28,7 +28,7 @@ describe("calculator's visor test", () => {
 
     calculatorProcess("C",visorMock2)
 
-    expect(visorMock2.mock.calls[0][0]).toMatchObject([]);
+    expect(visorMock2.mock.calls[0][0]).toBe("");
   });
   
   it("'s working change sign button", () => {
@@ -39,7 +39,7 @@ describe("calculator's visor test", () => {
     calculatorProcess("C",visorMock3)
 
     expect(visorMock3.mock.calls[1][0]).toBe("-1");
-    expect(visorMock3.mock.calls[2][0]).toMatchObject([]);
+    expect(visorMock3.mock.calls[2][0]).toBe("");
 
   });
   
@@ -49,11 +49,11 @@ describe("calculator's visor test", () => {
 
     calculatorProcess("1",visorMock4)
     calculatorProcess("0",visorMock4)
-    calculatorProcess("D",visorMock4)
+    calculatorProcess("Del",visorMock4)
     calculatorProcess("C",visorMock4)
 
     expect(visorMock4.mock.calls[2][0]).toBe("1");
-    expect(visorMock4.mock.calls[3][0]).toMatchObject([]);
+    expect(visorMock4.mock.calls[3][0]).toBe("");
 
   });
 });
