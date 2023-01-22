@@ -12,6 +12,40 @@ function calculatorProcess(content,visor) {
                             )
                      );
 		}
+
+		if (memory2.includes("-")) {
+			memory2 =
+                     String(Number((memory2[0]+memory2[1]))
+                            -
+                            Number((memory2[3]+memory2[4])
+                            )
+                     );
+		}
+
+		if (memory2.includes("*")) {
+			memory2 =
+                     String(Number((memory2[0]))
+                            *
+                            Number((memory2[2])
+                            )
+                     );
+		}
+
+		if (memory2.includes("/")) {
+			memory2 =
+                     String(Number((memory2[0]+memory2[1]))
+                            /
+                            Number((memory2[3]+memory2[4])
+                            )
+                     );
+		}
+
+		if (memory2.includes("%")) {
+			memory2 =
+                     String(Number((memory2[0]+memory2[1]))
+                            *Number("0.0"+(memory2[3]))
+                     );
+		}
 	}
 
 	if (memory2.includes("C")) {
@@ -26,7 +60,6 @@ function calculatorProcess(content,visor) {
 
 	if (memory2.includes("Del")) {
 		memory2 = memory2.slice(0,-(memory2.length - 1)); 
-		console.log(memory2 + "hit Del");
 	}
 
 	visor(memory2);

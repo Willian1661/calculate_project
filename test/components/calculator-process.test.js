@@ -4,6 +4,10 @@ describe("calculator's visor test", () => {
   const operations = [
     ["10", "+","30","=","40"],
     ["10", "+","10","=","20"],
+    ["20", "-","10","=","10"],
+    ["5", "*","2","=","10"],
+    ["30", "/","10","=","3"],
+    ["10", "%","1","=","0.1"],
   ];
 
 	it.each(operations)("'s printing a basic mathematic operation", (oper1,oper2,oper3,oper4,oper5) => {
