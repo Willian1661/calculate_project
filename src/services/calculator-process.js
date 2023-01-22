@@ -1,39 +1,39 @@
 let memory = [];
 function calculatorProcess(content,visor) {
 
-const numbersOperators = (operator) => {
-	return String(
-		eval(
-			(memory[0]+memory[1])
+	const numbersOperators = (operator) => {
+		return String(
+			eval(
+				(memory[0]+memory[1])
 			+ operator +
 			(memory[3]+memory[4])
-		));
-}
+			));
+	};
 
 	memory += content;
 
 	if (memory.includes("=")) {
-	if (memory.includes("+")) {
-			memory = numbersOperators("+")
-	}
+		if (memory.includes("+")) {
+			memory = numbersOperators("+");
+		}
 
-	if (memory.includes("-")) {
-			memory = numbersOperators("-")
-	}
+		if (memory.includes("-")) {
+			memory = numbersOperators("-");
+		}
 
-	if (memory.includes("*")) {
-			memory = numbersOperators("*")
-	}
+		if (memory.includes("*")) {
+			memory = numbersOperators("*");
+		}
 
-	if (memory.includes("/")) {
-			memory = numbersOperators("/")
-	}
+		if (memory.includes("/")) {
+			memory = numbersOperators("/");
+		}
 
-	if (memory.includes("%")) {
+		if (memory.includes("%")) {
 			memory =
     String(eval((memory[0]+memory[1]))*("0.0"+memory[3]));
+		}
 	}
-}
 
 	if (memory.includes("C")) {
 		memory = "";
