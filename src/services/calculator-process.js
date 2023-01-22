@@ -1,71 +1,56 @@
-let memory2 = [];
+let memory = [];
 function calculatorProcess(content,visor) {
-       
-	memory2 += content;
 
-	if (memory2.includes("=")) {
-		if (memory2.includes("+")) {
-			memory2 =
-                     String(Number((memory2[0]+memory2[1]))
-                            +
-                            Number((memory2[3]+memory2[4])
-                            )
-                     );
-		}
+const numbersOperators = (operator) => {
+	return String(
+		eval(
+			(memory[0]+memory[1])
+			+ operator +
+			(memory[3]+memory[4])
+		));
+}
 
-		if (memory2.includes("-")) {
-			memory2 =
-                     String(Number((memory2[0]+memory2[1]))
-                            -
-                            Number((memory2[3]+memory2[4])
-                            )
-                     );
-		}
+	memory += content;
 
-		if (memory2.includes("*")) {
-			memory2 =
-                     String(Number((memory2[0]))
-                            *
-                            Number((memory2[2])
-                            )
-                     );
-		}
-
-		if (memory2.includes("/")) {
-			memory2 =
-                     String(Number((memory2[0]+memory2[1]))
-                            /
-                            Number((memory2[3]+memory2[4])
-                            )
-                     );
-		}
-
-		if (memory2.includes("%")) {
-			memory2 =
-                     String(Number((memory2[0]+memory2[1]))
-                            *Number("0.0"+(memory2[3]))
-                     );
-		}
+	if (memory.includes("=")) {
+	if (memory.includes("+")) {
+			memory = numbersOperators("+")
 	}
 
-	if (memory2.includes("C")) {
-		memory2 = "";
-		visor(memory2);
-		return;
+	if (memory.includes("-")) {
+			memory = numbersOperators("-")
 	}
 
-	if (memory2.includes("+/-")) {
-		memory2 = String(Number((memory2[0])*-1));
+	if (memory.includes("*")) {
+			memory = numbersOperators("*")
 	}
 
-	if (memory2.includes("Del")) {
-		memory2 = memory2.slice(0,-(memory2.length - 1)); 
+	if (memory.includes("/")) {
+			memory = numbersOperators("/")
 	}
 
-	visor(memory2);
+	if (memory.includes("%")) {
+			memory =
+    String(eval((memory[0]+memory[1]))*("0.0"+memory[3]));
+	}
+}
+
+	if (memory.includes("C")) {
+		memory = "";
+	}
+
+	if (memory.includes("+/-")) {
+		memory = String(eval((memory[0])*-1));
+	}
+
+	if (memory.includes("Del")) {
+		memory = memory.slice(0,-(memory.length - 1)); 
+	}
+
+	visor(memory);
 
 
-	return console.log(memory2);
+	return console.log(memory);
 }
 
 module.exports = calculatorProcess;
