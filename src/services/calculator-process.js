@@ -1,32 +1,31 @@
 let memory = [];
+let result = ""
 function calculatorProcess(content,visor) {
-
-	const numbersOperators = (operator) => {
-		return String(
-			eval(
-				(memory[0]+memory[1])
-			+ operator +
-			(memory[3]+memory[4])
-			));
+	
+	const numbersOperators = () => {
+		return String(eval((result)));
 	};
-
+	
 	memory += content;
 
 	if (memory.includes("=")) {
+
+		result = memory.slice(0,-1)
+
 		if (memory.includes("+")) {
-			memory = numbersOperators("+");
+			memory = numbersOperators();
 		}
 
 		if (memory.includes("-")) {
-			memory = numbersOperators("-");
+			memory = numbersOperators();
 		}
 
 		if (memory.includes("*")) {
-			memory = numbersOperators("*");
+			memory = numbersOperators();
 		}
 
 		if (memory.includes("/")) {
-			memory = numbersOperators("/");
+			memory = numbersOperators();
 		}
 
 		if (memory.includes("%")) {
@@ -50,7 +49,7 @@ function calculatorProcess(content,visor) {
 	visor(memory);
 
 
-	return console.log(memory);
+	console.log(memory);
 }
 
 module.exports = calculatorProcess;

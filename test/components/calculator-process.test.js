@@ -6,8 +6,10 @@ describe("calculator's visor test", () => {
     ["10", "+","10","=","20","C"],
     ["20", "-","10","=","10","C"],
     ["50", "*","10","=","500","C"],
-    ["30", "/","10","=","3","C"],
+    ["300", "/","10","=","30","C"],
     ["10", "%","1","=","0.1","C"],
+    ["2.5", "+","2.5","=","5","C"],
+    ["100", "*","100","=","10000","C"],
   ];
 
 	it.each(operations)("'s printing a basic mathematic operation", (oper1,oper2,oper3,oper4,oper5,oper6) => {
@@ -28,31 +30,29 @@ describe("calculator's visor test", () => {
 
 	});
 
-  const changeSing = [["1","+/-","-1","C"]]
-  it.each(changeSing)("'s working change sign button", (oper1,oper2,oper3,oper4) => {
+  it("'s working change sign button", () => {
     
     let visorMock3 = jest.fn()
-    calculatorProcess(oper1,visorMock3)
-    calculatorProcess(oper2,visorMock3)
-    calculatorProcess(oper4,visorMock3)
+    calculatorProcess("1",visorMock3)
+    calculatorProcess("+/-",visorMock3)
+    calculatorProcess("C",visorMock3)
 
-    expect(visorMock3.mock.calls[0][0]).toBe(oper1);
-    expect(visorMock3.mock.calls[1][0]).toBe(oper3);
+    expect(visorMock3.mock.calls[0][0]).toBe("1");
+    expect(visorMock3.mock.calls[1][0]).toBe("-1");
     expect(visorMock3.mock.calls[2][0]).toBe("");
   });
-  const deleteLastNumber = [["10","Del","1","C"]]
-  it.each(deleteLastNumber)("'s working delete button", (oper1,oper2,oper3,oper4) => {
+  
+  it("'s working delete button", () => {
 
     let visorMock4 = jest.fn()
 
-    calculatorProcess(oper1,visorMock4)
-    calculatorProcess(oper2,visorMock4)
-    calculatorProcess(oper4,visorMock4)
+    calculatorProcess("10",visorMock4)
+    calculatorProcess("Del",visorMock4)
+    calculatorProcess("C",visorMock4)
 
-    expect(visorMock4.mock.calls[0][0]).toBe(oper1);
-    expect(visorMock4.mock.calls[1][0]).toBe(oper3);
+    expect(visorMock4.mock.calls[0][0]).toBe("10");
+    expect(visorMock4.mock.calls[1][0]).toBe("1");
     expect(visorMock4.mock.calls[2][0]).toBe("");
 
   });
 });
-
