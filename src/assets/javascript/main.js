@@ -4,13 +4,6 @@ const calculator = require("../../components/calculator")
 document.querySelector("body").insertAdjacentHTML("afterbegin",calculator("calculator"));
 // const inputReuslt = document.getElementById("calculator-screen")
 
-/* const buttonsElement = [
-	button("C","clear-all upper left"),button("+/-","less-more upper"),button("CE","del upper"),button("%","upper right"),
-	button("7","left"),button("8"),button("9"),button("/","right"),
-	button("4","left"),button("5"),button("6"),button("*","right"),
-	button("1","left"),button("2"),button("3"),button("+","right"),
-	button("0","bottom left"),button(".","bottom"),button("=","equal bottom"),button("-","bottom right"),
-]; */
 //------------------ for...loop for buttons elements -------------------------//
 
 
