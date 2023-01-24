@@ -1,23 +1,21 @@
 import "../../assets/css/main.css"; 
-const button = require("../../components/button");
-const buttonsGroup = require("../../components/buttons-group");
-const inputReuslt = document.querySelector(".input-result");
-document.querySelector(".calc_body").insertAdjacentHTML("beforeend",buttonsGroup("buttons"));
+const calculator = require("../../components/calculator")
 
-const buttonsElement = [
+document.querySelector("body").insertAdjacentHTML("afterbegin",calculator("calculator"));
+// const inputReuslt = document.getElementById("calculator-screen")
+
+/* const buttonsElement = [
 	button("C","clear-all upper left"),button("+/-","less-more upper"),button("CE","del upper"),button("%","upper right"),
 	button("7","left"),button("8"),button("9"),button("/","right"),
 	button("4","left"),button("5"),button("6"),button("*","right"),
 	button("1","left"),button("2"),button("3"),button("+","right"),
 	button("0","bottom left"),button(".","bottom"),button("=","equal bottom"),button("-","bottom right"),
-];
+]; */
 //------------------ for...loop for buttons elements -------------------------//
 
-for (let i = 0; i < buttonsElement.length; i++) {
-	
-	document.querySelector("#buttons").insertAdjacentHTML("beforeend",buttonsElement[i]);
-	const buttons = document.querySelectorAll("button");
-	
+
+// const buttons = document.querySelectorAll("button");
+	/* 
 	if (buttons[i].innerText !== "C" && 
 	buttons[i].innerText !== "+/-" && 
 	buttons[i].innerText !== "CE" && 
@@ -38,11 +36,11 @@ for (let i = 0; i < buttonsElement.length; i++) {
 			}
 			inputReuslt.value += buttons[i].textContent;
 		});
-	}
-}
+	} */
+
 	
 //----------------------  especial button elements --------------------------//
-
+/* 
 const clearAllElement = document.querySelector(".clear-all");
 const lessMoreElement = document.querySelector(".less-more");
 const delElement = document.querySelector(".del");
@@ -60,3 +58,4 @@ delElement.addEventListener("click",() =>{
 equalElement.addEventListener("click",() =>{
 	inputReuslt.value = eval(inputReuslt.value);
 });
+ */

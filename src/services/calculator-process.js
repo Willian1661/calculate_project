@@ -2,9 +2,7 @@ let memory = [];
 let result = ""
 function calculatorProcess(content,visor) {
 	
-	const numbersOperators = () => {
-		return String(eval((result)));
-	};
+	const numbersOperators = () => String(eval((result)));
 	
 	memory += content;
 

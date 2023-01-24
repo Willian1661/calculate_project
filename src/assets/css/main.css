@@ -8,7 +8,7 @@
 }
 body{
     min-height: 100vh;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.calc_body {
+#calculator{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,9 +30,9 @@ body{
     width: 500px;
     background: #3f3f3f;
 }
-
-.input-result {
+#calculator-screen{
     width: 460px;
+    height: 80px;
     border: none;
     background-color: #212121;
     color: #fafafa;
@@ -43,13 +43,16 @@ body{
     user-select: none;
 }
 
-#buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+#calculator-buttons{
+    background:gray;
+    width: auto;
+    height: auto;
+    border-radius: 0 0 8px 8px;
 
-#buttons button {
-    padding: 20px 0px 20px 0px;
+}
+button{
+    width: 114px;
+    height: 80px;
     background-color: #fafafa;
     border: none;
     font-size: 1.5rem;
@@ -57,58 +60,71 @@ body{
     text-align: center;
     border-radius: 4px;
     user-select: none;
-    margin: 4px;
+    margin: 6px 4px 6px 4px;
 }
-#buttons .left{
+
+#buttons-top{
+    width: 390px;
+}
+#buttons-right{
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    width: 123px;
+}
+#buttons-middle{
+    width: 390px;
+}
+#buttons-bottom{
+    width: 390px;
+}
+
+#calculator-buttons .left{
     margin-left: 6px;
 }
-#buttons .upper{
-    background: #78787a;
-    border-radius: 4px;
+#calculator-buttons .bottom{
+    margin-bottom: 8px;
+}
+#calculator-buttons .upper{
     margin-top: 8px;
 }
-#buttons .upper:hover{
+
+#calculator-buttons #buttons-top button{
+    background: #78787a;
+    border-radius: 4px;
+}
+#calculator-buttons #buttons-top button:hover{
     background: #7b797a;
 }
-#buttons .right{
+
+#calculator-buttons #buttons-right button{
     background: #ff9e0b !important;
     border:none;
     border-radius: 4px;
     margin-right: 6px;
 }
-#buttons .right:hover{
+#calculator-buttons #buttons-right button:hover{
 background: #c97c02;
 }
-#buttons .equal{
-    background-color: #fafafa;    
-    border-radius:4px;
-    border:none;
-    border-radius: 4px;
-}
-#buttons .equal:hover{
-    border-radius: 4px ;
-}
-#buttons .clear-all{
+
+#calculator-buttons .clear-all{
     background: #fd473d !important;
     border:none;
     border-radius: 4px;
     margin-left: 6px;
 }
-#buttons .clear-all:hover{
+#calculator-buttons .clear-all:hover{
     background: #ff584f;
     border:none;
     border-radius: 4px;
 }
-#buttons .bottom{
-    margin-bottom: 8px;
-}
 
-#buttons button:hover {
+button:hover {
     background-color: #fafafa;
     opacity: .6;
 }
 
-#buttons button:active {
+button:active {
     background-color: rgba(7, 7, 7, 0.3);
 }
 
