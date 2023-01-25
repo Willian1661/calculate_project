@@ -27,6 +27,14 @@ module.exports = {
 		"no-var": "warn",
 		"no-multiple-empty-lines": "error",
 		"no-mixed-spaces-and-tabs": ["error","smart-tabs"],
+		"no-console": "off",
+        "no-restricted-syntax": [
+            "error",
+            {
+                "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+                "message": "Unexpected property on console object was called"
+            }
+        ],
 		"eqeqeq": ["warn", "smart"],
 		"curly": "error",
 		"eol-last": [
