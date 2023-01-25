@@ -11,7 +11,7 @@ exports[`calculator screen component is passing calculator component 1`] = `
 		<div id="buttons-top">
 			<button>C</button>
 			<button>+/-</button>
-			<button>CE</button>
+			<button>Del</button>
 		</div>
             
 		<div id="buttons-right">

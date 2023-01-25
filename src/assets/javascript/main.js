@@ -1,8 +1,12 @@
 import "../../assets/css/main.css"; 
 const calculator = require("../../components/calculator")
+const calculatorProcess = require("../../services/calculator-process")
+const visorInteractor = require("../../services/visor-interactor")
 
 document.querySelector("body").insertAdjacentHTML("afterbegin",calculator("calculator"));
-// const inputReuslt = document.getElementById("calculator-screen")
+document.querySelectorAll("button").forEach(button => button.addEventListener("click", () => calculatorProcess(button.innerText,visorInteractor)))
+
+
 
 //------------------ for...loop for buttons elements -------------------------//
 

@@ -5,7 +5,7 @@ function calculator(id) {
 	const buttonsTop = buttonsGroup("buttons-top", [
 		button("C"),
 		button("+/-"),
-		button("CE")
+		button("Del")
 	]);
 	const buttonsMiddle = buttonsGroup("buttons-middle",[
 		button("1"), button("2"),button("3"),

@@ -46,8 +46,6 @@ function calculatorProcess(content,visor) {
 
 	visor(memory);
 
-
-	console.log(memory);
 }
 
 module.exports = calculatorProcess;
