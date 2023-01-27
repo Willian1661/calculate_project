@@ -40,8 +40,8 @@ function calculatorProcess(content,visor) {
 		memory = String(eval((memory[0])*-1));
 	}
 
-	if (memory.includes("Del")) {
-		memory = memory.slice(0,-(memory.length - 1)); 
+	if (memory.includes("D")) {
+		memory = memory.slice(0,-2);
 	}
 
 	visor(memory);

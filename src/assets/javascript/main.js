@@ -5,4 +5,4 @@ const visorInteractor = require("../../services/visor-interactor")
 
 document.querySelector("body").insertAdjacentHTML("afterbegin",calculator("calculator"));
 document.querySelectorAll("#calculator button")
-.forEach(button => button.addEventListener("click", () => calculatorProcess(button.innerText,visorInteractor)))
+.forEach(button => button.addEventListener("click", () => calculatorProcess(button.firstChild.dataset.value,visorInteractor)))

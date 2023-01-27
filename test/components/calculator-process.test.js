@@ -47,7 +47,7 @@ describe("calculator's visor test", () => {
     let visorMock4 = jest.fn()
 
     calculatorProcess("10",visorMock4)
-    calculatorProcess("Del",visorMock4)
+    calculatorProcess("D",visorMock4)
     calculatorProcess("C",visorMock4)
 
     expect(visorMock4.mock.calls[0][0]).toBe("10");
