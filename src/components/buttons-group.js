@@ -1,12 +1,6 @@
-function buttonsGroup(buttonsId,buttons,htmlClass) {		
-	if (htmlClass == undefined) {
-		return `
-		<div id="${buttonsId}">
-			${buttons.join("\n\t\t\t")}
-		</div>`;
-	}
+function buttonsGroup(divsId,buttons) {		
 	return `
-		<div id="${buttonsId}" class="${htmlClass}">
+		<div id="${divsId}">
 			${buttons.join("\n\t\t\t")}
 		</div>`;
 }

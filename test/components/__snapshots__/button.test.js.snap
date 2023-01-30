@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pattern button component has a html button's  tag 1`] = `"<button class="button is-baz" data-value="bar">foo</button>"`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`operators/numbers/especial icons has passed all the icons correctly 1`] = `
+[
+  "<i class='fa-solid fa-asterisk'></i>",
+  "<i class='fa-solid fa-divide'></i>",
+  "<i class='fa-solid fa-plus'></i>",
+  "<i class='fa-solid fa-plus-minus'></i>",
+  "<i class='fa-solid fa-minus'></i>",
+  "<i class='fa-solid fa-percent'></i>",
+  "<i class='fa-solid fa-c'></i>",
+  "<i class='fa-solid fa-delete-left'></i>",
+  "<i class='fa-solid fa-equals'></i>",
+  "<i class='fa-solid fa-period'>.</i>",
+  "<i class="fa-solid fa-1"></i>",
+  "<i class="fa-solid fa-2"></i>",
+  "<i class="fa-solid fa-3"></i>",
+  "<i class="fa-solid fa-4"></i>",
+  "<i class="fa-solid fa-5"></i>",
+  "<i class="fa-solid fa-6"></i>",
+  "<i class="fa-solid fa-7"></i>",
+  "<i class="fa-solid fa-8"></i>",
+  "<i class="fa-solid fa-9"></i>",
+  "<i class="fa-solid fa-0"></i>",
+]
+`;

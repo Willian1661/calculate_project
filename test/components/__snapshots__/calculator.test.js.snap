@@ -2,42 +2,42 @@
 
 exports[`calculator screen component is passing calculator component 1`] = `
 "
-    <div id="body-calc-id">
+    <div id="body-calc-id" class="">
 
-        <input type="text" placeholder="0" id="calculator-screen">
+        <input type="text" placeholder="0" id="calculator-screen" class="container">
 
-        <div id="calculator-buttons">
+        <div id="calculator-buttons" class="box">
             
 		<div id="buttons-top">
-			<button><i class="fa-solid fa-c" data-value="C"></i></button>
-			<button><i class="fa-solid fa-plus-minus" data-value="+/-"></i></button>
-			<button><i class="fa-solid fa-delete-left" data-value="D"></i></button>
+			<button class="button is-large is-light" data-value="C"><i class='fa-solid fa-c'></i></button>
+			<button class="button is-large is-light" data-value="+/-"><i class='fa-solid fa-plus-minus'></i></button>
+			<button class="button is-large is-light" data-value="D"><i class='fa-solid fa-delete-left'></i></button>
 		</div>
             
 		<div id="buttons-right">
-			<button><i class="fa-solid fa-percent" data-value="%"></i></button>
-			<button><i class="fa-solid fa-divide" data-value="/"></i></button>
-			<button><i class="fa-solid fa-asterisk" data-value="*"></i></button>
-			<button><i class="fa-solid fa-plus" data-value="+"></i></button>
-			<button><i class="fa-solid fa-minus" data-value="-"></i></button>
+			<button class="button is-large is-light" data-value="%"><i class='fa-solid fa-percent'></i></button>
+			<button class="button is-large is-light" data-value="/"><i class='fa-solid fa-divide'></i></button>
+			<button class="button is-large is-light" data-value="*"><i class='fa-solid fa-asterisk'></i></button>
+			<button class="button is-large is-light" data-value="+"><i class='fa-solid fa-plus'></i></button>
+			<button class="button is-large is-light" data-value="-"><i class='fa-solid fa-minus'></i></button>
 		</div>
             
 		<div id="buttons-middle">
-			<button><i class="fa-solid fa-1" data-value="1"></i></button>
-			<button><i class="fa-solid fa-2" data-value="2"></i></button>
-			<button><i class="fa-solid fa-3" data-value="3"></i></button>
-			<button><i class="fa-solid fa-4" data-value="4"></i></button>
-			<button><i class="fa-solid fa-5" data-value="5"></i></button>
-			<button><i class="fa-solid fa-6" data-value="6"></i></button>
-			<button><i class="fa-solid fa-7" data-value="7"></i></button>
-			<button><i class="fa-solid fa-8" data-value="8"></i></button>
-			<button><i class="fa-solid fa-9" data-value="9"></i></button>
+			<button class="button is-large is-light" data-value="1"><i class="fa-solid fa-1"></i></button>
+			<button class="button is-large is-light" data-value="2"><i class="fa-solid fa-2"></i></button>
+			<button class="button is-large is-light" data-value="3"><i class="fa-solid fa-3"></i></button>
+			<button class="button is-large is-light" data-value="4"><i class="fa-solid fa-4"></i></button>
+			<button class="button is-large is-light" data-value="5"><i class="fa-solid fa-5"></i></button>
+			<button class="button is-large is-light" data-value="6"><i class="fa-solid fa-6"></i></button>
+			<button class="button is-large is-light" data-value="7"><i class="fa-solid fa-7"></i></button>
+			<button class="button is-large is-light" data-value="8"><i class="fa-solid fa-8"></i></button>
+			<button class="button is-large is-light" data-value="9"><i class="fa-solid fa-9"></i></button>
 		</div>
             
 		<div id="buttons-bottom">
-			<button><i class="fa-solid fa-0" data-value="0"></i></button>
-			<button><i class="fa-solid fa-period" data-value=".">.</i></button>
-			<button><i class="fa-solid fa-equals" data-value="="></i></button>
+			<button class="button is-large is-light" data-value="0"><i class="fa-solid fa-0"></i></button>
+			<button class="button is-large is-light" data-value="."><i class='fa-solid fa-period'>.</i></button>
+			<button class="button is-large is-light" data-value="="><i class='fa-solid fa-equals'></i></button>
 		</div>
         </div>
     </div>

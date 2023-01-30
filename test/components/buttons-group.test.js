@@ -5,8 +5,8 @@ describe("pattern div component", () =>{
 
     it("is passing dynamic buttons", () => {
         const buttons =[ 
-        button("foo","fooClass"),
-        button("baz","bazClass")
+        button("foo","foo","is-foo"),
+        button("baz","baz","is-baz")
     ]
         expect(buttonsGroup("buttons-id",buttons)).toMatchSnapshot()
     });
