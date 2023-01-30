@@ -1,4 +1,4 @@
 function clearAllIcon() {
-    return `<i class="fa-solid fa-c" data-value="C"></i>`
+	return "<i class='fa-solid fa-c' data-value='C'></i>";
 }
-module.exports = clearAllIcon
+module.exports = clearAllIcon;

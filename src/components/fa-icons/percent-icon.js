@@ -1,4 +1,4 @@
 function percentIcon() {
-    return `<i class="fa-solid fa-percent" data-value="%"></i>`
+	return "<i class='fa-solid fa-percent' data-value='%'></i>";
 }
-module.exports = percentIcon
+module.exports = percentIcon;

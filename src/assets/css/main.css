@@ -21,6 +21,7 @@ body{
 }
 
 #calculator{
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,14 +29,13 @@ body{
     background-color: #fafafa;
     box-shadow: 35px 20px 25px 2px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    width: 500px;
     background: #3f3f3f;
 }
 #calculator-screen{
-    width: 500px;
+    width: 350px;
     height: 120px;
     border: none;
-    background-color: #212121;
+    background-color: white;
     color: #fafafa;
     padding: 20px 20px 40px 20px;
     border-radius: 8px 8px 0 0;
@@ -44,14 +44,14 @@ body{
     user-select: none;
 }
 
-#calculator #calculator-buttons{
+/* #calculator #calculator-buttons{
     position: relative;
     width: auto;
     height: auto;
     border-radius: 0 0 8px 8px;
 
-}
-#calculator button{
+} */
+/* #calculator button{
     width: 112px;
     height: 80px;
     background-color: #fafafa;
@@ -63,19 +63,18 @@ body{
     user-select: none;
     margin: 6px 2px 6px 4px;
 }
-
+ */
 #calculator #buttons-top,
 #buttons-middle,
 #buttons-bottom{
-    width: 370px;
+    width: 250px;
     margin-left: 6px;
 }
 #calculator #buttons-right{
     position:absolute;
-    right: 0px;
-    top: 0px;
+    bottom: 1.5rem;
     right: 0;
-    width: 123px; 
+    width: 80px; 
     margin-right: 6px;
 }
 
@@ -85,7 +84,7 @@ body{
 #calculator #calculator-buttons #buttons-top{
     margin-top: 6px;
 }
-
+/* 
 #calculator #calculator-buttons #buttons-top button{
     background: #78787a;
     border-radius: 4px;
@@ -116,7 +115,7 @@ background: #c97c02;
 #calculator button:active {
     background-color: rgba(160, 160, 160, 0.8) !important;
 }
-
+ */
 @media screen and (min-width: 2560px) {
     #calculator{
         width: 400px;

@@ -1,5 +1,5 @@
 let memory = [];
-let result = ""
+let result = "";
 function calculatorProcess(content,visor) {
 	
 	const numbersOperators = () => String(eval((result)));
@@ -8,7 +8,7 @@ function calculatorProcess(content,visor) {
 
 	if (memory.includes("=")) {
 
-		result = memory.slice(0,-1)
+		result = memory.slice(0,-1);
 
 		if (memory.includes("+")) {
 			memory = numbersOperators();

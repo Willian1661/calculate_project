@@ -1,4 +1,4 @@
 function plusIcon() {
-    return `<i class="fa-solid fa-plus" data-value="+"></i>`
+	return "<i class='fa-solid fa-plus' data-value='+'></i>";
 }
-module.exports = plusIcon
+module.exports = plusIcon;

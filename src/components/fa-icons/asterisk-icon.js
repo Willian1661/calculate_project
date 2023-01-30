@@ -1,4 +1,4 @@
 function asteriskIcon() {
-    return `<i class="fa-solid fa-asterisk" data-value="*"></i>`
+	return "<i class='fa-solid fa-asterisk' data-value='*'></i>";
 }
-module.exports = asteriskIcon
+module.exports = asteriskIcon;

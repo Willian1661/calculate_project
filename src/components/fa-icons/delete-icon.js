@@ -1,4 +1,4 @@
 function deleteIcon() {
-    return `<i class="fa-solid fa-delete-left" data-value="D"></i>`
+	return "<i class='fa-solid fa-delete-left' data-value='D'></i>";
 }
-module.exports = deleteIcon
+module.exports = deleteIcon;

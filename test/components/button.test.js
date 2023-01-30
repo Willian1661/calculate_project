@@ -17,6 +17,6 @@ describe("Pattern button component", () => {
 	});
 
 	it("has a button with an optional class.", () =>{
-		expect(button("foo")).toBe("<button>foo</button>");
+		expect(button("foo")).toBe(`<button class="button">foo</button>`);
 	});
 });
