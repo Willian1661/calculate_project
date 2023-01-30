@@ -26,10 +26,10 @@ exports[`calculator screen component is passing calculator component 1`] = `
 			<button><i class="fa-solid fa-1" data-value="1"></i></button>
 			<button><i class="fa-solid fa-2" data-value="2"></i></button>
 			<button><i class="fa-solid fa-3" data-value="3"></i></button>
-			<button><i class="fa-solid fa-4" data-value="2"></i></button>
+			<button><i class="fa-solid fa-4" data-value="4"></i></button>
 			<button><i class="fa-solid fa-5" data-value="5"></i></button>
 			<button><i class="fa-solid fa-6" data-value="6"></i></button>
-			<button><i class="fa-solid fa-7" data-value="3"></i></button>
+			<button><i class="fa-solid fa-7" data-value="7"></i></button>
 			<button><i class="fa-solid fa-8" data-value="8"></i></button>
 			<button><i class="fa-solid fa-9" data-value="9"></i></button>
 		</div>

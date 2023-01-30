@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Font Awesome icons 's passing especial icons correctly 1`] = `
+[
+  "<i class="fa-solid fa-c" data-value="C"></i>",
+  "<i class="fa-solid fa-delete-left" data-value="D"></i>",
+  "<i class="fa-solid fa-equals" data-value="="></i>",
+  "<i class="fa-solid fa-period" data-value=".">.</i>",
+]
+`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 1`] = `"<i class="fa-solid fa-1" data-value="1"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 2`] = `"<i class="fa-solid fa-2" data-value="2"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 3`] = `"<i class="fa-solid fa-3" data-value="3"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 4`] = `"<i class="fa-solid fa-4" data-value="4"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 5`] = `"<i class="fa-solid fa-5" data-value="5"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 6`] = `"<i class="fa-solid fa-6" data-value="6"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 7`] = `"<i class="fa-solid fa-7" data-value="7"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 8`] = `"<i class="fa-solid fa-8" data-value="8"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 9`] = `"<i class="fa-solid fa-9" data-value="9"></i>"`;
+
+exports[`Font Awesome icons 's passing fa-icons correctly 10`] = `"<i class="fa-solid fa-0" data-value="0"></i>"`;
+
+exports[`Font Awesome icons 's passing operators icon correctly 1`] = `
+[
+  "<i class="fa-solid fa-asterisk" data-value="*"></i>",
+  "<i class="fa-solid fa-divide" data-value="/"></i>",
+  "<i class="fa-solid fa-plus" data-value="+"></i>",
+  "<i class="fa-solid fa-plus-minus" data-value="+/-"></i>",
+  "<i class="fa-solid fa-minus" data-value="-"></i>",
+  "<i class="fa-solid fa-percent" data-value="%"></i>",
+]
+`;

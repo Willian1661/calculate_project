@@ -1,29 +1,41 @@
 const button = require("./button");
 const buttonsGroup = require("./buttons-group");
+const numbersIcon = require("../../src/components/fa-icons/numbers-icon")
+const asterisk = require("../../src/components/fa-icons/asterisk-icon")
+const clearAll = require("../../src/components/fa-icons/clear-all-icon")
+const delet = require("../../src/components/fa-icons/delete-icon")
+const devide = require("./fa-icons/divide-icon")
+const equals = require("../../src/components/fa-icons/equals-icon")
+const minus = require("../../src/components/fa-icons/minus-icon")
+const percent = require("../../src/components/fa-icons/percent-icon")
+const period = require("../../src/components/fa-icons/period-icon")
+const plus = require("../../src/components/fa-icons/plus-icon")
+const plusMinus = require("../../src/components/fa-icons/plus-minus-icon")
+
 
 function calculator(id) {
 	const buttonsTop = buttonsGroup("buttons-top", [
-		button(`<i class="fa-solid fa-c" data-value="C"></i>`),
-		button(`<i class="fa-solid fa-plus-minus" data-value="+/-"></i>`),
-		button(`<i class="fa-solid fa-delete-left" data-value="D"></i>`)
+		button(clearAll()),
+		button(plusMinus()),
+		button(delet())
 	]);
 	const buttonsMiddle = buttonsGroup("buttons-middle",[
-		button(`<i class="fa-solid fa-1" data-value="1"></i>`), button(`<i class="fa-solid fa-2" data-value="2"></i>`),button(`<i class="fa-solid fa-3" data-value="3"></i>`),
-		button(`<i class="fa-solid fa-4" data-value="2"></i>`), button(`<i class="fa-solid fa-5" data-value="5"></i>`),button(`<i class="fa-solid fa-6" data-value="6"></i>`),
-		button(`<i class="fa-solid fa-7" data-value="3"></i>`), button(`<i class="fa-solid fa-8" data-value="8"></i>`),button(`<i class="fa-solid fa-9" data-value="9"></i>`),
+		button(numbersIcon("1")), button(numbersIcon("2")),button(numbersIcon("3")),
+		button(numbersIcon("4")), button(numbersIcon("5")),button(numbersIcon("6")),
+		button(numbersIcon("7")), button(numbersIcon("8")),button(numbersIcon("9")),
 	]);
 	const buttonsRight = buttonsGroup("buttons-right",[
-		button(`<i class="fa-solid fa-percent" data-value="%"></i>`),
-		button(`<i class="fa-solid fa-divide" data-value="/"></i>`),
-		button(`<i class="fa-solid fa-asterisk" data-value="*"></i>`),
-		button(`<i class="fa-solid fa-plus" data-value="+"></i>`),
-		button(`<i class="fa-solid fa-minus" data-value="-"></i>`),
+		button(percent()),
+		button(devide()),
+		button(asterisk()),
+		button(plus()),
+		button(minus()),
 	]);
 
 	const buttonsBottom = buttonsGroup("buttons-bottom",[
-		button(`<i class="fa-solid fa-0" data-value="0"></i>`),
-		button(`<i class="fa-solid fa-period" data-value=".">.</i>`),
-		button(`<i class="fa-solid fa-equals" data-value="="></i>`),
+		button(numbersIcon("0")),
+		button(period()),
+		button(equals()),
 	]);
 	return`
     <div id="${id}">
