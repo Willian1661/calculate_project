@@ -9,7 +9,10 @@
     "watch": "npx webpack watch --mode development",
     "lint": "npx eslint ./src",
     "lint:fix": "npx eslint --fix ./src",
-    "server": "npx webpack server --open"
+    "server": "npx webpack server --open",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
@@ -23,19 +26,23 @@
   },
   "homepage": "https://github.com/Willian1661/calculate_project#readme",
   "devDependencies": {
+    "bulma": "^0.9.4",
     "css-loader": "^6.7.3",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.3.1",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
     "prettier": "^2.8.1",
+    "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "bulma": "^0.9.4",
+    "bulma-start": "^0.0.5",
     "eslint-plugin-jest": "^27.1.7",
     "lodash": "^4.17.21"
   }

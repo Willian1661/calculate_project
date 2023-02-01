@@ -2,7 +2,7 @@
 
 exports[`pattern div component is passing dynamic buttons 1`] = `
 "
-		<div id="buttons-id">
+		<div id="buttons-id" class="is-style">
 			<button class="button is-foo" data-value="foo">foo</button>
 			<button class="button is-baz" data-value="baz">baz</button>
 		</div>"

@@ -2,27 +2,20 @@
 
 exports[`calculator screen component is passing calculator component 1`] = `
 "
-    <div id="body-calc-id" class="">
+    <div id="body-calc-id" class="box">
 
-        <input type="text" placeholder="0" id="calculator-screen" class="container">
+        <input type="text" placeholder="0" id="calculator-screen" class="input is-white input-radius has-text-right is-size-2 py-6 is-shadowless"/>
 
-        <div id="calculator-buttons" class="box">
-            
-		<div id="buttons-top">
+        <div id="calculator-buttons" class="columns is-gapless">
+			<div id="horizontal-buttons" class="is-small">
+            	
+		<div id="buttons-top" class="undefined">
 			<button class="button is-large is-light" data-value="C"><i class='fa-solid fa-c'></i></button>
 			<button class="button is-large is-light" data-value="+/-"><i class='fa-solid fa-plus-minus'></i></button>
 			<button class="button is-large is-light" data-value="D"><i class='fa-solid fa-delete-left'></i></button>
 		</div>
-            
-		<div id="buttons-right">
-			<button class="button is-large is-light" data-value="%"><i class='fa-solid fa-percent'></i></button>
-			<button class="button is-large is-light" data-value="/"><i class='fa-solid fa-divide'></i></button>
-			<button class="button is-large is-light" data-value="*"><i class='fa-solid fa-asterisk'></i></button>
-			<button class="button is-large is-light" data-value="+"><i class='fa-solid fa-plus'></i></button>
-			<button class="button is-large is-light" data-value="-"><i class='fa-solid fa-minus'></i></button>
-		</div>
-            
-		<div id="buttons-middle">
+            	
+		<div id="buttons-middle" class="is-small">
 			<button class="button is-large is-light" data-value="1"><i class="fa-solid fa-1"></i></button>
 			<button class="button is-large is-light" data-value="2"><i class="fa-solid fa-2"></i></button>
 			<button class="button is-large is-light" data-value="3"><i class="fa-solid fa-3"></i></button>
@@ -33,12 +26,23 @@ exports[`calculator screen component is passing calculator component 1`] = `
 			<button class="button is-large is-light" data-value="8"><i class="fa-solid fa-8"></i></button>
 			<button class="button is-large is-light" data-value="9"><i class="fa-solid fa-9"></i></button>
 		</div>
-            
-		<div id="buttons-bottom">
+            	
+		<div id="buttons-bottom" class="undefined">
 			<button class="button is-large is-light" data-value="0"><i class="fa-solid fa-0"></i></button>
 			<button class="button is-large is-light" data-value="."><i class='fa-solid fa-period'>.</i></button>
 			<button class="button is-large is-light" data-value="="><i class='fa-solid fa-equals'></i></button>
 		</div>
+			</div>
+			<div id="vertical-buttons" class="column">
+            	
+		<div id="buttons-right" class="undefined">
+			<button class="button is-large is-light" data-value="%"><i class='fa-solid fa-percent'></i></button>
+			<button class="button is-large is-light" data-value="/"><i class='fa-solid fa-divide'></i></button>
+			<button class="button is-large is-light" data-value="*"><i class='fa-solid fa-asterisk'></i></button>
+			<button class="button is-large is-light" data-value="+"><i class='fa-solid fa-plus'></i></button>
+			<button class="button is-large is-light" data-value="-"><i class='fa-solid fa-minus'></i></button>
+		</div>
+			</div>
         </div>
     </div>
     "
