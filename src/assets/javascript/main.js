@@ -1,4 +1,4 @@
-require("../../assets/css/myStyles.scss")
+require("../../assets/css/myStyles.scss");
 const calculator = require("../../components/calculator");
 const calculatorProcess = require("../../services/calculator-process");
 const visorInteractor = require("../../services/visor-interactor");

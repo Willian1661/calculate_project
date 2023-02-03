@@ -14,45 +14,58 @@ const plusMinus = require("./icons/plus-minus-icon");
 
 
 function calculator(id) {
-	const buttonsTop = buttonsGroup("buttons-top", [
-		button(clearAll(),"is-large is-light","C"),
-		button(plusMinus(),"is-large is-light","+/-"),
-		button(delet(),"is-large is-light","D")
-	]);
-	const buttonsMiddle = buttonsGroup("buttons-middle",[
-		button(numbersIcon("1"),"is-large is-light","1"), button(numbersIcon("2"),"is-large is-light","2"),button(numbersIcon("3"),"is-large is-light","3"),
-		button(numbersIcon("4"),"is-large is-light","4"), button(numbersIcon("5"),"is-large is-light","5"),button(numbersIcon("6"),"is-large is-light","6"),
-		button(numbersIcon("7"),"is-large is-light","7"), button(numbersIcon("8"),"is-large is-light","8"),button(numbersIcon("9"),"is-large is-light","9"),
-	]);
-	const buttonsRight = buttonsGroup("buttons-right",[
-		button(percent(),"is-large is-light","%"),
-		button(devide(),"is-large is-light","/"),
-		button(asterisk(),"is-large is-light","*"),
-		button(plus(),"is-large is-light","+"),
-		button(minus(),"is-large is-light","-"),
-	]);
+	const buttonsFirstLine = buttonsGroup("buttonsFirstLine", [
+		button(clearAll(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger", "C"), 
+		button(plusMinus(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "+/-"),
+		button(delet(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "D"), 
+		button(percent(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "%")
+	], "columns is-justify-content-center");
 
-	const buttonsBottom = buttonsGroup("buttons-bottom",[
-		button(numbersIcon("0"),"is-large is-light","0"),
-		button(period(),"is-large is-light","."),
-		button(equals(),"is-large is-light","="),
-	]);
-	return`
-    <div id="${id}" class="box">
+	const buttonsSecondLine = buttonsGroup("buttonsSecondLine", [
+		button(numbersIcon("1"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "1"), 
+		button(numbersIcon("2"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "2"),
+		button(numbersIcon("3"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "3"), 
+		button(devide(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "/")
+	], "columns is-justify-content-center");
 
-        <input type="text" placeholder="0" id="calculator-screen" class="input is-white input-radius has-text-right is-size-2 py-6 is-shadowless"/>
+	const buttonsThirdLine = buttonsGroup("buttonsThirdLine", [
+		button(numbersIcon("4"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "4"), 
+		button(numbersIcon("5"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "5"),
+		button(numbersIcon("6"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "6"), 
+		button(asterisk(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "*")
+	], "columns is-justify-content-center");
 
-        <div id="calculator-buttons" class="columns is-gapless">
-			<div id="horizontal-buttons" class="is-small">
-            	${buttonsTop}
-            	${buttonsMiddle}
-            	${buttonsBottom}
+	const buttonsFourthLine = buttonsGroup("buttonsFourthLine", [
+		button(numbersIcon("7"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "7"), 
+		button(numbersIcon("8"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "8"),
+		button(numbersIcon("9"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "9"), 
+		button(plus(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "+")
+	], "columns is-justify-content-center");
+
+	const buttonsFifthLine = buttonsGroup("buttonsFifthLine", [
+		button(numbersIcon("0"), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "0"), 
+		button(period(), "button is-large is-light m-2 is-fullwidth is-one-fifth ", "."),
+		button(equals(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white", "="), 
+		button(minus(), "button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning", "-")
+	], "columns is-justify-content-center");
+
+
+	return `
+	<div class="column is-one-fifth is-offset-5">
+		<div id="${id}" class="box">
+    		<div class="container mb-2">	
+	
+				<input type="text" placeholder="0" id="calculator-screen" class="input is-white has-text-right is-size-3 px-0 py-6 mb-4 is-shadowless has-text-weight-semibold"
+    	            size="8" />
+
+    	        			${buttonsFirstLine}
+    	        			${buttonsSecondLine}
+    	        			${buttonsThirdLine}
+    	        			${buttonsFourthLine}
+    	        			${buttonsFifthLine}
 			</div>
-			<div id="vertical-buttons" class="column">
-            	${buttonsRight}
-			</div>
-        </div>
-    </div>
+		</div>
+	</div>
     `;
 }
 module.exports = calculator;
