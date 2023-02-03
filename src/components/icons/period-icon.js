@@ -1,4 +1,4 @@
 function periodIcon() {
-	return "<i class='fa-solid fa-period'>.</i>";
+	return "<i class='icon fa-solid fa-period'>.</i>";
 }
 module.exports = periodIcon;

@@ -1,4 +1,4 @@
 function minusIcon() {
-	return "<i class='fa-solid fa-minus'></i>";
+	return "<i class='icon fa-solid fa-minus'></i>";
 }
 module.exports = minusIcon;
