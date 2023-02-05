@@ -1,9 +1,6 @@
-function button(textContent,htmlClass) {
-	if (htmlClass === undefined) {
-		return `<button>${textContent}</button>`;
-	}
-	
-	return `<button class="${htmlClass}">${textContent}</button>`;
-	
+function button(textContent,htmlClass,dataValue) {
+
+	return `<button class="button ${htmlClass}" data-value="${dataValue}">${textContent}</button>`;
+		
 }
 module.exports = button;

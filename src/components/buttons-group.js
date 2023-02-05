@@ -1,6 +1,6 @@
-function buttonsGroup(buttonsId,buttons) {		
+function buttonsGroup(divsId,buttons,htmlClass) {		
 	return `
-		<div id="${buttonsId}">
+		<div id="${divsId}" class="${htmlClass}">
 			${buttons.join("\n\t\t\t")}
 		</div>`;
 }

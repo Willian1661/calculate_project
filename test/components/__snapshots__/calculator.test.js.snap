@@ -2,44 +2,50 @@
 
 exports[`calculator screen component is passing calculator component 1`] = `
 "
-    <div id="body-calc-id">
+	<div class="column is-one-fifth is-offset-5">
+		<div id="body-calc-id" class="box">
+    		<div class="container mb-2">	
+	
+				<input type="text" placeholder="0" id="calculator-screen" class="input is-white has-text-right is-size-3 px-0 py-6 mb-4 is-shadowless has-text-weight-semibold"
+    	            size="8" />
 
-        <input type="text" placeholder="0" id="calculator-screen">
-
-        <div id="calculator-buttons">
-            
-		<div id="buttons-top">
-			<button>C</button>
-			<button>+/-</button>
-			<button>Del</button>
+    	        			
+		<div id="buttonsFirstLine" class="columns is-justify-content-center">
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger" data-value="C"><i class='icon fa-solid fa-c'></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="+/-"><i class='icon fa-solid fa-plus-minus'></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="D"><i class='icon fa-solid fa-delete-left'></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="%"><i class='icon fa-solid fa-percent'></i></button>
 		</div>
-            
-		<div id="buttons-right">
-			<button>%</button>
-			<button>/</button>
-			<button>*</button>
-			<button>+</button>
-			<button>-</button>
+    	        			
+		<div id="buttonsSecondLine" class="columns is-justify-content-center">
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="1"><i class="icon fa-solid fa-1"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="2"><i class="icon fa-solid fa-2"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="3"><i class="icon fa-solid fa-3"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="/"><i class='icon fa-solid fa-divide'></i></button>
 		</div>
-            
-		<div id="buttons-middle">
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button>4</button>
-			<button>5</button>
-			<button>6</button>
-			<button>7</button>
-			<button>8</button>
-			<button>9</button>
+    	        			
+		<div id="buttonsThirdLine" class="columns is-justify-content-center">
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="4"><i class="icon fa-solid fa-4"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="5"><i class="icon fa-solid fa-5"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="6"><i class="icon fa-solid fa-6"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="*"><i class='icon fa-solid fa-asterisk'></i></button>
 		</div>
-            
-		<div id="buttons-bottom">
-			<button>0</button>
-			<button>.</button>
-			<button>=</button>
+    	        			
+		<div id="buttonsFourthLine" class="columns is-justify-content-center">
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="7"><i class="icon fa-solid fa-7"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="8"><i class="icon fa-solid fa-8"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="9"><i class="icon fa-solid fa-9"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="+"><i class='icon fa-solid fa-plus'></i></button>
 		</div>
-        </div>
-    </div>
+    	        			
+		<div id="buttonsFifthLine" class="columns is-justify-content-center">
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="0"><i class="icon fa-solid fa-0"></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth " data-value="."><i class='icon fa-solid fa-period'>.</i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white" data-value="="><i class='icon fa-solid fa-equals'></i></button>
+			<button class="button button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data-value="-"><i class='icon fa-solid fa-minus'></i></button>
+		</div>
+			</div>
+		</div>
+	</div>
     "
 `;
