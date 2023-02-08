@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculator component is rendering properly 1`] = `
+<div
+  class="columns"
+>
+  <div
+    class="column is-one-fifth is-offset-5"
+  >
+    <div
+      class="box"
+      id="foo"
+    >
+      <div
+        class="container mb-2"
+      >
+        <input
+          class="input is-white has-text-right is-size-3 px-0 py-6 mb-4 is-shadowless has-text-weight-semibold"
+          id="calculator-screen"
+          placeholder="0"
+          size="8"
+          type="text"
+        />
+        <div
+          className="columns is-justify-content-center"
+          id="buttonsFirstLine"
+        >
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger"
+            data-value="C"
+          >
+            <i
+              class="icon fa-solid fa-c"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="+/-"
+          >
+            <i
+              class="icon fa-solid fa-plus-minus"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="D"
+          >
+            <i
+              class="icon fa-solid fa-delete-left"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="%"
+          >
+            <i
+              class="icon fa-solid fa-percent"
+            />
+          </button>
+        </div>
+        <div
+          className="columns is-justify-content-center"
+          id="buttonsSecondLine"
+        >
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="1"
+          >
+            <i
+              class="icon fa-solid fa-1"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="2"
+          >
+            <i
+              class="icon fa-solid fa-2"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="3"
+          >
+            <i
+              class="icon fa-solid fa-3"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="/"
+          >
+            <i
+              class="icon fa-solid fa-divide"
+            />
+          </button>
+        </div>
+        <div
+          className="columns is-justify-content-center"
+          id="buttonsThirdLine"
+        >
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="4"
+          >
+            <i
+              class="icon fa-solid fa-4"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="5"
+          >
+            <i
+              class="icon fa-solid fa-5"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="6"
+          >
+            <i
+              class="icon fa-solid fa-6"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="*"
+          >
+            <i
+              class="icon fa-solid fa-asterisk"
+            />
+          </button>
+        </div>
+        <div
+          className="columns is-justify-content-center"
+          id="buttonsFourthLine"
+        >
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="7"
+          >
+            <i
+              class="icon fa-solid fa-7"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="8"
+          >
+            <i
+              class="icon fa-solid fa-8"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="9"
+          >
+            <i
+              class="icon fa-solid fa-9"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="+"
+          >
+            <i
+              class="icon fa-solid fa-plus"
+            />
+          </button>
+        </div>
+        <div
+          className="columns is-justify-content-center"
+          id="buttonsFifthLine"
+        >
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="0"
+          >
+            <i
+              class="icon fa-solid fa-0"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            data-value="."
+          >
+            <i
+              class="icon fa-solid fa-period"
+            >
+              .
+            </i>
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white"
+            data-value="="
+          >
+            <i
+              class="icon fa-solid fa-equals"
+            />
+          </button>
+          <button
+            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            data-value="-"
+          >
+            <i
+              class="icon fa-solid fa-minus"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
