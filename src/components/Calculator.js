@@ -1,17 +1,17 @@
 import React from "react";
 import Button from "./Button";
-import ButtonsGroup from "./Buttons-group";
-import IconAsterisk from "./icons/asterisk-icon";
-import IconClearAll from "./icons/clear-all-icon";
-import IconDelete from "./icons/delete-icon";
-import IconDivide from "./icons/divide-icon";
-import IconEquals from "./icons/equals-icon";
-import IconMinus from "./icons/minus-icon";
-import IconNumbers from "./icons/numbers-icon";
-import IconPercent from "./icons/percent-icon";
-import IconPeriod from "./icons/period-icon";
-import IconPlus from "./icons/plus-icon";
-import IconPlusMinus from "./icons/plus-minus-icon";
+import ButtonsGroup from "./ButtonsGroup";
+import IconAsterisk from "./icons/AsteriskIcon";
+import IconClearAll from "./icons/ClearAllIcon";
+import IconDelete from "./icons/DeleteIcon";
+import IconDivide from "./icons/DivideIcon";
+import IconEquals from "./icons/EqualsIcon";
+import IconMinus from "./icons/MinusIcon";
+import IconNumbers from "./icons/NumbersIcon";
+import IconPercent from "./icons/PercentIcon";
+import IconPeriod from "./icons/PeriodIcon";
+import IconPlus from "./icons/PlusIcon";
+import IconPlusMinus from "./icons/PlusMinusIcon";
 
 export default function Calculator(props) {
 	return (

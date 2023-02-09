@@ -1,4 +1,4 @@
-const calculatorProcess = require("../../src/services/calculator-process")
+const calculatorProcess = require("../../src/services/CalculatorProcess")
 
 describe("calculator's visor test", () => {
   const operations = [

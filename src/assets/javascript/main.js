@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import Calculator from "../../components/Calculator";
 import "../../assets/css/custom.scss";
 
-const calculatorProcess = require("../../services/calculator-process");
-const visorInteractor = require("../../services/visor-interactor");
+const calculatorProcess = require("../../services/CalculatorProcess");
+const visorInteractor = require("../../services/VisorInteractor");
 
 ReactDOM.render(
 

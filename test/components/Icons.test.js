@@ -1,17 +1,17 @@
 import React from "react";
 import { expect, describe, it, jest} from '@jest/globals';
 import renderer from "react-test-renderer";
-import IconAsterisk from "../../src/components/icons/asterisk-icon";
-import IconClearAll from "../../src/components/icons/clear-all-icon"
-import IconDelete from "../../src/components/icons/delete-icon"
-import IconDivide from "../../src/components/icons/divide-icon"
-import IconEquals from "../../src/components/icons/equals-icon"
-import IconMinus from "../../src/components/icons/minus-icon"
-import IconNumbers from "../../src/components/icons/numbers-icon"
-import IconPercent from "../../src/components/icons/percent-icon"
-import IconPeriod from "../../src/components/icons/period-icon"
-import IconPlus from "../../src/components/icons/plus-icon"
-import IconPlusMinus from "../../src/components/icons/plus-minus-icon"
+import IconAsterisk from "../../src/components/icons/AsteriskIcon";
+import IconClearAll from "../../src/components/icons/ClearAllIcon"
+import IconDelete from "../../src/components/icons/DeleteIcon"
+import IconDivide from "../../src/components/icons/DivideIcon"
+import IconEquals from "../../src/components/icons/EqualsIcon"
+import IconMinus from "../../src/components/icons/MinusIcon"
+import IconNumbers from "../../src/components/icons/NumbersIcon"
+import IconPercent from "../../src/components/icons/PercentIcon"
+import IconPeriod from "../../src/components/icons/PeriodIcon"
+import IconPlus from "../../src/components/icons/PlusIcon"
+import IconPlusMinus from "../../src/components/icons/PlusMinusIcon"
 
 describe("Icons components", () =>{
 
