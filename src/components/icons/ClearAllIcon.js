@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function iconClearAll() {
+export default function IconClearAll() {
 	
 	return <i className='icon fa-solid fa-c'></i>;
 }
