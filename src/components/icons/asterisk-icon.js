@@ -1,4 +1,6 @@
-function asteriskIcon() {
-	return "<i class='icon fa-solid fa-asterisk'></i>";
+import React from "react";
+
+export default function iconAsterisk() {
+
+	return <i className='icon fa-solid fa-asterisk'></i>;
 }
-module.exports = asteriskIcon;

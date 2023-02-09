@@ -1,4 +1,5 @@
-function deleteIcon() {
-	return "<i class='icon fa-solid fa-delete-left'></i>";
+import React from "react";
+
+export default function iconDelete() {
+	return <i className='icon fa-solid fa-delete-left'></i>;
 }
-module.exports = deleteIcon;

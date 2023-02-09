@@ -1,4 +1,5 @@
-function numbersIcon(number) {
-	return `<i class="icon fa-solid fa-${number}"></i>`;
+import React from "react";
+
+export default function iconNumbers({number}) {
+	return <i className={`icon fa-solid fa-${number}`}></i>;
 }
-module.exports = numbersIcon;

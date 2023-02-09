@@ -10,6 +10,6 @@ ReactDOM.render(
 
 	<Calculator id="calculator" />,document.querySelector("body")
 
-	) 
+); 
 document.querySelectorAll("#calculator button")
 	.forEach(button => button.addEventListener("click", () => calculatorProcess(button.dataset.value,visorInteractor) ));

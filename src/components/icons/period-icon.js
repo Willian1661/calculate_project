@@ -1,4 +1,6 @@
-function periodIcon() {
-	return "<i class='icon fa-solid fa-period'>.</i>";
+import React from "react";
+
+export default function iconPeriod() {
+
+	return <i className='icon fa-solid fa-period'>.</i>;
 }
-module.exports = periodIcon;

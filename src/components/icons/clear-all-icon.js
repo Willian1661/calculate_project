@@ -1,4 +1,6 @@
-function clearAllIcon() {
-	return "<i class='icon fa-solid fa-c'></i>";
+import React from "react";
+
+export default function iconClearAll() {
+	
+	return <i className='icon fa-solid fa-c'></i>;
 }
-module.exports = clearAllIcon;

@@ -1,4 +1,6 @@
-function minusIcon() {
-	return "<i class='icon fa-solid fa-minus'></i>";
+import React from "react";
+
+export default function iconMinus() {
+	
+	return <i className='icon fa-solid fa-minus'></i>;
 }
-module.exports = minusIcon;
