@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icons components has passed all the icons correctly 1`] = `
+<i
+  className="icon fa-solid fa-asterisk"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 2`] = `
+<i
+  className="icon fa-solid fa-c"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 3`] = `
+<i
+  className="icon fa-solid fa-delete-left"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 4`] = `
+<i
+  className="icon fa-solid fa-divide"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 5`] = `
+<i
+  className="icon fa-solid fa-equals"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 6`] = `
+<i
+  className="icon fa-solid fa-minus"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 7`] = `
+<i
+  className="icon fa-solid fa-percent"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 8`] = `
+<i
+  className="icon fa-solid fa-period"
+>
+  .
+</i>
+`;
+
+exports[`Icons components has passed all the icons correctly 9`] = `
+<i
+  className="icon fa-solid fa-plus"
+/>
+`;
+
+exports[`Icons components has passed all the icons correctly 10`] = `
+<i
+  className="icon fa-solid fa-plus-minus"
+/>
+`;
+
+exports[`Icons components is passing all IconNumbers component properly 1`] = `
+<i
+  className="icon fa-solid fa-foo"
+/>
+`;

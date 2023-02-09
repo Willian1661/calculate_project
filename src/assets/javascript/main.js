@@ -1,8 +1,15 @@
-require("../../assets/css/myStyles.scss");
-const calculator = require("../../components/calculator");
-const calculatorProcess = require("../../services/calculator-process");
-const visorInteractor = require("../../services/visor-interactor");
+import React from "react";
+import ReactDOM from "react-dom";
+import Calculator from "../../components/Calculator";
+import "../../assets/css/custom.scss";
 
-document.querySelector("body").insertAdjacentHTML("afterbegin",calculator("calculator"));
+const calculatorProcess = require("../../services/CalculatorProcess");
+const visorInteractor = require("../../services/VisorInteractor");
+
+ReactDOM.render(
+
+	<Calculator id="calculator" />,document.querySelector("body")
+
+); 
 document.querySelectorAll("#calculator button")
-	.forEach(button => button.addEventListener("click", () => calculatorProcess(button.dataset.value,visorInteractor)));
+	.forEach(button => button.addEventListener("click", () => calculatorProcess(button.dataset.value,visorInteractor) ));

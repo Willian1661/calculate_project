@@ -4,41 +4,44 @@ module.exports = {
 		"es2022": true,
 		"node": true
 	},
-	"extends": "eslint:recommended",
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
 	"overrides": [],
 	"parserOptions": {
 		"ecmaVersion": "latest",
 		"sourceType": "module"
 	},
-	"plugins": ["jest"],
+	"plugins": ["jest", "react"],
 	"rules": {
+		"react/prop-types": "off",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
 		"jest/no-disabled-tests": "warn",
-    	"jest/no-focused-tests": "error",
-    	"jest/no-identical-title": "error",
-    	"jest/prefer-to-have-length": "warn",
-    	"jest/valid-expect": "error",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error",
 		"no-useless-call": "error",
-        "no-useless-catch": "error",
+		"no-useless-catch": "error",
 		"no-lonely-if": "error",
 		"no-duplicate-imports": "error",
-        "no-else-return": "error",
-        "no-empty-function": "error",
+		"no-else-return": "error",
+		"no-empty-function": "error",
 		"no-case-declarations": "error",
 		"no-var": "warn",
 		"no-multiple-empty-lines": "error",
-		"no-mixed-spaces-and-tabs": ["error","smart-tabs"],
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
 		"no-console": "off",
-        "no-restricted-syntax": [
-            "error",
-            {
-                "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
-                "message": "Unexpected property on console object was called"
-            }
-        ],
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+				"message": "Unexpected property on console object was called"
+			}
+		],
 		"eqeqeq": ["warn", "smart"],
 		"curly": "error",
 		"eol-last": [
-			"error", 
+			"error",
 			"always"
 		],
 		"indent": [
@@ -54,10 +57,10 @@ module.exports = {
 			"double"
 		],
 		"semi": "error",
-        "semi-spacing": "error",
+		"semi-spacing": "error",
 		"semi-style": [
-            "error",
-            "last"
-        ]
+			"error",
+			"last"
+		]
 	}
 }
