@@ -1,6 +1,6 @@
 import React from "react";
-
-export default function IconClearAll() {
+import { IconLetterC } from '@tabler/icons-react'
+export default function ClearAllIcon() {
 	
-	return <i className='icon fa-solid fa-c'></i>;
+	return <IconLetterC size={20} strokeWidth={3}/>
 }

@@ -1,6 +1,7 @@
 import React from "react";
+import { IconPlus } from "@tabler/icons-react"
 
-export default function IconPlus() {
+export default function PlusIcon() {
 	
-	return <i className='icon fa-solid fa-plus'></i>;
+	return <IconPlus size={20} strokeWidth={3}/>
 }

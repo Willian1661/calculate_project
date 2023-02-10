@@ -1,5 +1,6 @@
 import React from "react";
+import { IconBackspace } from '@tabler/icons-react';
 
-export default function IconDelete() {
-	return <i className='icon fa-solid fa-delete-left'></i>;
+export default function DeleteIcon() {
+	return <IconBackspace size={20} strokeWidth={3}/>
 }

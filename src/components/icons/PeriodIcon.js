@@ -1,6 +1,7 @@
 import React from "react";
+import { IconPointFilled } from "@tabler/icons-react"
 
-export default function IconPeriod() {
+export default function PeriodIcon() {
 
-	return <i className='icon fa-solid fa-period'>.</i>;
+	return <IconPointFilled size={20} strokeWidth={3}/>
 }

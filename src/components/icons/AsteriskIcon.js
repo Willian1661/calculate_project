@@ -1,6 +1,7 @@
 import React from "react";
+import { IconAsterisk } from '@tabler/icons-react';
 
-export default function IconAsterisk() {
+export default function AsteriskIcon() {
 
-	return <i className='icon fa-solid fa-asterisk'></i>;
+	return <IconAsterisk size={20} strokeWidth={3}/>
 }

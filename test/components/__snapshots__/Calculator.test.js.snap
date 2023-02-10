@@ -29,33 +29,97 @@ exports[`calculator component is rendering properly 1`] = `
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger"
             data-value="C"
           >
-            <i
-              className="icon fa-solid fa-c"
-            />
+            <svg
+              className="tabler-icon tabler-icon-letter-c"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="+/-"
           >
-            <i
-              className="icon fa-solid fa-plus-minus"
-            />
+            <svg
+              className="tabler-icon tabler-icon-exposure-minus-1"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12h6"
+              />
+              <path
+                d="M18 19v-14l-4 4"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="D"
           >
-            <i
-              className="icon fa-solid fa-delete-left"
-            />
+            <svg
+              className="tabler-icon tabler-icon-backspace"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"
+              />
+              <path
+                d="M12 10l4 4m0 -4l-4 4"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="%"
           >
-            <i
-              className="icon fa-solid fa-percent"
-            />
+            <svg
+              className="tabler-icon tabler-icon-percentage"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 17m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+              />
+              <path
+                d="M7 7m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+              />
+              <path
+                d="M6 18l12 -12"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -66,33 +130,100 @@ exports[`calculator component is rendering properly 1`] = `
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="1"
           >
-            <i
-              className="icon fa-solid fa-1"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-1"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 20v-16l-5 5"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="2"
           >
-            <i
-              className="icon fa-solid fa-2"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-2"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 8a4 4 0 1 1 8 0c0 1.098 -.564 2.025 -1.159 2.815l-6.841 9.185h8"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="3"
           >
-            <i
-              className="icon fa-solid fa-3"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-3"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12a4 4 0 1 0 -4 -4"
+              />
+              <path
+                d="M8 16a4 4 0 1 0 4 -4"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="/"
           >
-            <i
-              className="icon fa-solid fa-divide"
-            />
+            <svg
+              className="tabler-icon tabler-icon-divide"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="6"
+                fill="currentColor"
+                r="1"
+              />
+              <circle
+                cx="12"
+                cy="18"
+                fill="currentColor"
+                r="1"
+              />
+              <path
+                d="M5 12l14 0"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -103,33 +234,103 @@ exports[`calculator component is rendering properly 1`] = `
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="4"
           >
-            <i
-              className="icon fa-solid fa-4"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-4"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 20v-15l-8 11h10"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="5"
           >
-            <i
-              className="icon fa-solid fa-5"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-5"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 20h4a4 4 0 1 0 0 -8h-4v-8h8"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="6"
           >
-            <i
-              className="icon fa-solid fa-6"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-6"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 16a4 4 0 1 0 8 0v-1a4 4 0 1 0 -8 0"
+              />
+              <path
+                d="M16 8a4 4 0 1 0 -8 0v8"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="*"
           >
-            <i
-              className="icon fa-solid fa-asterisk"
-            />
+            <svg
+              className="tabler-icon tabler-icon-asterisk"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12l8 -4.5"
+              />
+              <path
+                d="M12 12v9"
+              />
+              <path
+                d="M12 12l-8 -4.5"
+              />
+              <path
+                d="M12 12l8 4.5"
+              />
+              <path
+                d="M12 3v9"
+              />
+              <path
+                d="M12 12l-8 4.5"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -140,33 +341,94 @@ exports[`calculator component is rendering properly 1`] = `
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="7"
           >
-            <i
-              className="icon fa-solid fa-7"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-7"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 4h8l-4 16"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="8"
           >
-            <i
-              className="icon fa-solid fa-8"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-8"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 8m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"
+              />
+              <path
+                d="M12 16m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="9"
           >
-            <i
-              className="icon fa-solid fa-9"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-9"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8a4 4 0 1 0 -8 0v1a4 4 0 1 0 8 0"
+              />
+              <path
+                d="M8 16a4 4 0 1 0 8 0v-8"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="+"
           >
-            <i
-              className="icon fa-solid fa-plus"
-            />
+            <svg
+              className="tabler-icon tabler-icon-plus"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 5l0 14"
+              />
+              <path
+                d="M5 12l14 0"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -177,35 +439,92 @@ exports[`calculator component is rendering properly 1`] = `
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="0"
           >
-            <i
-              className="icon fa-solid fa-0"
-            />
+            <svg
+              className="tabler-icon tabler-icon-number-0"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 16v-8"
+              />
+              <path
+                d="M12 20a4 4 0 0 0 4 -4v-8a4 4 0 1 0 -8 0v8a4 4 0 0 0 4 4z"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth "
             data-value="."
           >
-            <i
-              className="icon fa-solid fa-period"
+            <svg
+              className="tabler-icon tabler-icon-point-filled"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              .
-            </i>
+              <path
+                d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"
+                fill="currentColor"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white"
             data-value="="
           >
-            <i
-              className="icon fa-solid fa-equals"
-            />
+            <svg
+              className="tabler-icon tabler-icon-equal"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 10h14"
+              />
+              <path
+                d="M5 14h14"
+              />
+            </svg>
           </button>
           <button
             className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="-"
           >
-            <i
-              className="icon fa-solid fa-minus"
-            />
+            <svg
+              className="tabler-icon tabler-icon-minus"
+              fill="none"
+              height={20}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              viewBox="0 0 24 24"
+              width={20}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12l14 0"
+              />
+            </svg>
           </button>
         </div>
       </div>

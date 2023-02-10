@@ -1,6 +1,7 @@
 import React from "react";
+import { IconDivide } from "@tabler/icons-react"
 
-export default function IconDivide() {
+export default function DivideIcon() {
 
-	return <i className='icon fa-solid fa-divide'></i>;
+	return <IconDivide size={20} strokeWidth={3}/>
 }
