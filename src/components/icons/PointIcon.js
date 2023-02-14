@@ -3,5 +3,5 @@ import { IconPointFilled } from "@tabler/icons-react"
 
 export default function PeriodIcon() {
 
-	return <IconPointFilled size={20} strokeWidth={3}/>
+	return <IconPointFilled size={25} strokeWidth={1}/>
 }

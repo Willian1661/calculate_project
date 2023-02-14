@@ -4,13 +4,13 @@ exports[`Icons components has passed all the icons correctly 1`] = `
 <svg
   className="tabler-icon tabler-icon-asterisk"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -38,13 +38,13 @@ exports[`Icons components has passed all the icons correctly 2`] = `
 <svg
   className="tabler-icon tabler-icon-letter-c"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -57,13 +57,13 @@ exports[`Icons components has passed all the icons correctly 3`] = `
 <svg
   className="tabler-icon tabler-icon-backspace"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -79,13 +79,13 @@ exports[`Icons components has passed all the icons correctly 4`] = `
 <svg
   className="tabler-icon tabler-icon-divide"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -110,13 +110,13 @@ exports[`Icons components has passed all the icons correctly 5`] = `
 <svg
   className="tabler-icon tabler-icon-equal"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -132,13 +132,13 @@ exports[`Icons components has passed all the icons correctly 6`] = `
 <svg
   className="tabler-icon tabler-icon-minus"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -151,13 +151,13 @@ exports[`Icons components has passed all the icons correctly 7`] = `
 <svg
   className="tabler-icon tabler-icon-percentage"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -176,13 +176,13 @@ exports[`Icons components has passed all the icons correctly 8`] = `
 <svg
   className="tabler-icon tabler-icon-point-filled"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
-  strokeWidth={3}
+  strokeWidth={1}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -196,13 +196,13 @@ exports[`Icons components has passed all the icons correctly 9`] = `
 <svg
   className="tabler-icon tabler-icon-plus"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -218,13 +218,13 @@ exports[`Icons components has passed all the icons correctly 10`] = `
 <svg
   className="tabler-icon tabler-icon-exposure-minus-1"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -240,13 +240,13 @@ exports[`Icons components has passed all the icons correctly 11`] = `
 <svg
   className="tabler-icon tabler-icon-number-0"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -262,13 +262,13 @@ exports[`Icons components has passed all the icons correctly 12`] = `
 <svg
   className="tabler-icon tabler-icon-number-1"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -281,13 +281,13 @@ exports[`Icons components has passed all the icons correctly 13`] = `
 <svg
   className="tabler-icon tabler-icon-number-2"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -300,13 +300,13 @@ exports[`Icons components has passed all the icons correctly 14`] = `
 <svg
   className="tabler-icon tabler-icon-number-3"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -322,13 +322,13 @@ exports[`Icons components has passed all the icons correctly 15`] = `
 <svg
   className="tabler-icon tabler-icon-number-4"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -341,13 +341,13 @@ exports[`Icons components has passed all the icons correctly 16`] = `
 <svg
   className="tabler-icon tabler-icon-number-5"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -360,13 +360,13 @@ exports[`Icons components has passed all the icons correctly 17`] = `
 <svg
   className="tabler-icon tabler-icon-number-6"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -382,13 +382,13 @@ exports[`Icons components has passed all the icons correctly 18`] = `
 <svg
   className="tabler-icon tabler-icon-number-7"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -401,13 +401,13 @@ exports[`Icons components has passed all the icons correctly 19`] = `
 <svg
   className="tabler-icon tabler-icon-number-8"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
@@ -423,13 +423,13 @@ exports[`Icons components has passed all the icons correctly 20`] = `
 <svg
   className="tabler-icon tabler-icon-number-9"
   fill="none"
-  height={20}
+  height={25}
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
   strokeWidth={3}
   viewBox="0 0 24 24"
-  width={20}
+  width={25}
   xmlns="http://www.w3.org/2000/svg"
 >
   <path

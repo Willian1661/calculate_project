@@ -8,7 +8,7 @@ import DivideIcon from "./icons/DivideIcon";
 import EqualsIcon from "./icons/EqualsIcon";
 import MinusIcon from "./icons/MinusIcon";
 import PercentIcon from "./icons/PercentIcon";
-import PeriodIcon from "./icons/PeriodIcon";
+import PeriodIcon from "./icons/PointIcon";
 import PlusIcon from "./icons/PlusIcon";
 import PlusMinusIcon from "./icons/PlusMinusIcon";
 import Number0Icon from "./icons/Number0Icon"
@@ -35,16 +35,16 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsFirstLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger" data="C">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-danger" data="C">
 								<ClearAllIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+/-">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+/-">
 								<PlusMinusIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="D">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="D">
 								<DeleteIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="%">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="%">
 								<PercentIcon />
 							</Button>
 						</ButtonsGroup>
@@ -52,16 +52,16 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsSecondLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="1">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="1">
 								<Number1Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="2">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="2">
 								<Number2Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="3">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="3">
 								<Number3Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="/">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="/">
 								<DivideIcon />
 							</Button>
 						</ButtonsGroup>
@@ -69,16 +69,16 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsThirdLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="4">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="4">
 								<Number4Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="5">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="5">
 								<Number5Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="6">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="6">
 								<Number6Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="*">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="*">
 								<AsteriskIcon />
 							</Button>
 						</ButtonsGroup>
@@ -86,16 +86,16 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsFourthLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="7">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="7">
 								<Number7Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="8">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="8">
 								<Number8Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="9">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="9">
 								<Number9Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+">
 								<PlusIcon />
 							</Button>
 						</ButtonsGroup>
@@ -103,16 +103,16 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsFifthLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="0">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="0">
 								<Number0Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data=".">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data=".">
 								<PeriodIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white" data="=">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white" data="=">
 								<EqualsIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="-">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="-">
 								<MinusIcon />
 							</Button>
 						</ButtonsGroup>

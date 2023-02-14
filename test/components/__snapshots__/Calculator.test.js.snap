@@ -26,19 +26,19 @@ exports[`calculator component is rendering properly 1`] = `
           id="buttonsFirstLine"
         >
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-danger"
             data-value="C"
           >
             <svg
               className="tabler-icon tabler-icon-letter-c"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -47,19 +47,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="+/-"
           >
             <svg
               className="tabler-icon tabler-icon-exposure-minus-1"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -71,19 +71,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="D"
           >
             <svg
               className="tabler-icon tabler-icon-backspace"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -95,19 +95,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="%"
           >
             <svg
               className="tabler-icon tabler-icon-percentage"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -127,19 +127,19 @@ exports[`calculator component is rendering properly 1`] = `
           id="buttonsSecondLine"
         >
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="1"
           >
             <svg
               className="tabler-icon tabler-icon-number-1"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -148,19 +148,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="2"
           >
             <svg
               className="tabler-icon tabler-icon-number-2"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -169,19 +169,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="3"
           >
             <svg
               className="tabler-icon tabler-icon-number-3"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -193,19 +193,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="/"
           >
             <svg
               className="tabler-icon tabler-icon-divide"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
@@ -231,19 +231,19 @@ exports[`calculator component is rendering properly 1`] = `
           id="buttonsThirdLine"
         >
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="4"
           >
             <svg
               className="tabler-icon tabler-icon-number-4"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -252,19 +252,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="5"
           >
             <svg
               className="tabler-icon tabler-icon-number-5"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -273,19 +273,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="6"
           >
             <svg
               className="tabler-icon tabler-icon-number-6"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -297,19 +297,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="*"
           >
             <svg
               className="tabler-icon tabler-icon-asterisk"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -338,19 +338,19 @@ exports[`calculator component is rendering properly 1`] = `
           id="buttonsFourthLine"
         >
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="7"
           >
             <svg
               className="tabler-icon tabler-icon-number-7"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -359,19 +359,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="8"
           >
             <svg
               className="tabler-icon tabler-icon-number-8"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -383,19 +383,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="9"
           >
             <svg
               className="tabler-icon tabler-icon-number-9"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -407,19 +407,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="+"
           >
             <svg
               className="tabler-icon tabler-icon-plus"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -436,19 +436,19 @@ exports[`calculator component is rendering properly 1`] = `
           id="buttonsFifthLine"
         >
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="0"
           >
             <svg
               className="tabler-icon tabler-icon-number-0"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -460,19 +460,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth "
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth "
             data-value="."
           >
             <svg
               className="tabler-icon tabler-icon-point-filled"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={3}
+              strokeWidth={1}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -482,19 +482,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white"
             data-value="="
           >
             <svg
               className="tabler-icon tabler-icon-equal"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -506,19 +506,19 @@ exports[`calculator component is rendering properly 1`] = `
             </svg>
           </button>
           <button
-            className="button is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning"
+            className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
             data-value="-"
           >
             <svg
               className="tabler-icon tabler-icon-minus"
               fill="none"
-              height={20}
+              height={25}
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
               viewBox="0 0 24 24"
-              width={20}
+              width={25}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

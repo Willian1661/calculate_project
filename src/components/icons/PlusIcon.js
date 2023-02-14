@@ -3,5 +3,5 @@ import { IconPlus } from "@tabler/icons-react"
 
 export default function PlusIcon() {
 	
-	return <IconPlus size={20} strokeWidth={3}/>
+	return <IconPlus size={25} strokeWidth={3}/>
 }

@@ -8,7 +8,7 @@ import IconDivide from "../../src/components/icons/DivideIcon"
 import IconEquals from "../../src/components/icons/EqualsIcon"
 import IconMinus from "../../src/components/icons/MinusIcon"
 import IconPercent from "../../src/components/icons/PercentIcon"
-import IconPeriod from "../../src/components/icons/PeriodIcon"
+import IconPoint from "../../src/components/icons/PointIcon"
 import IconPlus from "../../src/components/icons/PlusIcon"
 import IconPlusMinus from "../../src/components/icons/PlusMinusIcon"
 import Number0Icon from "../../src/components/icons/Number0Icon"
@@ -26,7 +26,7 @@ describe("Icons components", () =>{
 
         it.each([
         <IconAsterisk />,<IconClearAll />,<IconDelete />,<IconDivide />,<IconEquals />,
-        <IconMinus />,<IconPercent />,<IconPeriod />,<IconPlus />,<IconPlusMinus />,
+        <IconMinus />,<IconPercent />,<IconPoint />,<IconPlus />,<IconPlusMinus />,
         <Number0Icon />,<Number1Icon />,<Number2Icon />,<Number3Icon />,<Number4Icon />,
         <Number5Icon />,<Number6Icon />,<Number7Icon />,<Number8Icon />,<Number9Icon />,
         ])("has passed all the icons correctly", (componentIcon) => {
