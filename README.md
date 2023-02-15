@@ -31,6 +31,9 @@ Then, if you want to automatically save your changes you need to run and after t
 
 ### You just successfully generated your page!
 
+<img src="src/assets/images/calculator.png" width="240">
+
+
 At this point one more thing you should run in your terminal, are the tests. Follow the next steps to run Jest.
 
 ## Runnig test with Jest
