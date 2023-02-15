@@ -1,17 +1,26 @@
 import React from "react";
 import Button from "./Button";
 import ButtonsGroup from "./ButtonsGroup";
-import IconAsterisk from "./icons/AsteriskIcon";
-import IconClearAll from "./icons/ClearAllIcon";
-import IconDelete from "./icons/DeleteIcon";
-import IconDivide from "./icons/DivideIcon";
-import IconEquals from "./icons/EqualsIcon";
-import IconMinus from "./icons/MinusIcon";
-import IconNumbers from "./icons/NumbersIcon";
-import IconPercent from "./icons/PercentIcon";
-import IconPeriod from "./icons/PeriodIcon";
-import IconPlus from "./icons/PlusIcon";
-import IconPlusMinus from "./icons/PlusMinusIcon";
+import AsteriskIcon from "./icons/AsteriskIcon";
+import ClearAllIcon from "./icons/ClearAllIcon";
+import DeleteIcon from "./icons/DeleteIcon";
+import DivideIcon from "./icons/DivideIcon";
+import EqualsIcon from "./icons/EqualsIcon";
+import MinusIcon from "./icons/MinusIcon";
+import PercentIcon from "./icons/PercentIcon";
+import PeriodIcon from "./icons/PointIcon";
+import PlusIcon from "./icons/PlusIcon";
+import PlusMinusIcon from "./icons/PlusMinusIcon";
+import Number0Icon from "./icons/Number0Icon"
+import Number1Icon from "./icons/Number1Icon"
+import Number2Icon from "./icons/Number2Icon"
+import Number3Icon from "./icons/Number3Icon"
+import Number4Icon from "./icons/Number4Icon"
+import Number5Icon from "./icons/Number5Icon"
+import Number6Icon from "./icons/Number6Icon"
+import Number7Icon from "./icons/Number7Icon"
+import Number8Icon from "./icons/Number8Icon"
+import Number9Icon from "./icons/Number9Icon"
 
 export default function Calculator(props) {
 	return (
@@ -26,85 +35,85 @@ export default function Calculator(props) {
 						<ButtonsGroup
 							groupsId="buttonsFirstLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-danger" data="C">
-								<IconClearAll />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-danger" data="C">
+								<ClearAllIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+/-">
-								<IconPlusMinus />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+/-">
+								<PlusMinusIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="D">
-								<IconDelete />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="D">
+								<DeleteIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="%">
-								<IconPercent />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="%">
+								<PercentIcon />
 							</Button>
 						</ButtonsGroup>
 
 						<ButtonsGroup
 							groupsId="buttonsSecondLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="1">
-								<IconNumbers number="1" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="1">
+								<Number1Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="2">
-								<IconNumbers number="2" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="2">
+								<Number2Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="3">
-								<IconNumbers number="3" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="3">
+								<Number3Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="/">
-								<IconDivide />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="/">
+								<DivideIcon />
 							</Button>
 						</ButtonsGroup>
 
 						<ButtonsGroup
 							groupsId="buttonsThirdLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="4">
-								<IconNumbers number="4" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="4">
+								<Number4Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="5">
-								<IconNumbers number="5" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="5">
+								<Number5Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="6">
-								<IconNumbers number="6" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="6">
+								<Number6Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="*">
-								<IconAsterisk />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="*">
+								<AsteriskIcon />
 							</Button>
 						</ButtonsGroup>
 
 						<ButtonsGroup
 							groupsId="buttonsFourthLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="7">
-								<IconNumbers number="7" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="7">
+								<Number7Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="8">
-								<IconNumbers number="8" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="8">
+								<Number8Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="9">
-								<IconNumbers number="9" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="9">
+								<Number9Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+">
-								<IconPlus />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+">
+								<PlusIcon />
 							</Button>
 						</ButtonsGroup>
 
 						<ButtonsGroup
 							groupsId="buttonsFifthLine" htmlClass="columns is-justify-content-center">
 
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data="0">
-								<IconNumbers number="0" />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data="0">
+								<Number0Icon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth " data=".">
-								<IconPeriod />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth " data=".">
+								<PeriodIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white" data="=">
-								<IconEquals />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-background-warning has-text-white" data="=">
+								<EqualsIcon />
 							</Button>
-							<Button htmlClass="is-large is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="-">
-								<IconMinus />
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="-">
+								<MinusIcon />
 							</Button>
 						</ButtonsGroup>
 					</div>

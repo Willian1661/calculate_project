@@ -50,6 +50,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@tabler/icons-react": "^2.2.0",
     "bulma-start": "^0.0.5",
     "eslint-plugin-jest": "^27.1.7",
     "lodash": "^4.17.21",

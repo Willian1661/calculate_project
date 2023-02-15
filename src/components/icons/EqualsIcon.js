@@ -1,6 +1,7 @@
 import React from "react";
+import { IconEqual } from "@tabler/icons-react"
 
-export default function IconEquals() {
+export default function EqualsIcon() {
 	
-	return <i className='icon fa-solid fa-equals'></i>;
+	return <IconEqual size={25} strokeWidth={3}/>
 }

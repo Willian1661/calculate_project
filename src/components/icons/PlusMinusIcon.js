@@ -1,5 +1,6 @@
 import React from "react";
+import { IconExposureMinus1} from "@tabler/icons-react"
 
-export default function IconPlusMinus() {
-	return <i className='icon fa-solid fa-plus-minus'></i>;
+export default function PlusMinusIcon() {
+	return <IconExposureMinus1 size={25} strokeWidth={3}/>
 }
