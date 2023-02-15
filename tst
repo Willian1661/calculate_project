@@ -1,1 +1,0 @@
-isso é apenas um test de qual sera o resultado ao editar duas branch ao mesmo tempo
