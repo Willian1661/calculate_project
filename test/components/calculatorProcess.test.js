@@ -1,4 +1,4 @@
-const calculatorProcess = require("../../src/services/CalculatorProcess")
+import CalculatorProcess from "../../src/services/CalculatorProcess";
 
 describe("calculator's visor test", () => {
   const operations = [
@@ -16,11 +16,11 @@ describe("calculator's visor test", () => {
 		
     let visorMock = jest.fn()
     
-    calculatorProcess(oper1,visorMock)
-    calculatorProcess(oper2,visorMock)
-    calculatorProcess(oper3,visorMock)
-    calculatorProcess(oper4,visorMock)
-    calculatorProcess(oper6,visorMock)
+    CalculatorProcess(oper1,visorMock)
+    CalculatorProcess(oper2,visorMock)
+    CalculatorProcess(oper3,visorMock)
+    CalculatorProcess(oper4,visorMock)
+    CalculatorProcess(oper6,visorMock)
     
     expect(visorMock.mock.calls[0][0]).toBe(oper1);
     expect(visorMock.mock.calls[1][0]).toBe(oper1 + oper2);
@@ -33,9 +33,9 @@ describe("calculator's visor test", () => {
   it("'s working change sign button", () => {
     
     let visorMock3 = jest.fn()
-    calculatorProcess("1",visorMock3)
-    calculatorProcess("+/-",visorMock3)
-    calculatorProcess("C",visorMock3)
+    CalculatorProcess("1",visorMock3)
+    CalculatorProcess("S",visorMock3)
+    CalculatorProcess("C",visorMock3)
 
     expect(visorMock3.mock.calls[0][0]).toBe("1");
     expect(visorMock3.mock.calls[1][0]).toBe("-1");
@@ -46,9 +46,9 @@ describe("calculator's visor test", () => {
 
     let visorMock4 = jest.fn()
 
-    calculatorProcess("10",visorMock4)
-    calculatorProcess("D",visorMock4)
-    calculatorProcess("C",visorMock4)
+    CalculatorProcess("10",visorMock4)
+    CalculatorProcess("D",visorMock4)
+    CalculatorProcess("C",visorMock4)
 
     expect(visorMock4.mock.calls[0][0]).toBe("10");
     expect(visorMock4.mock.calls[1][0]).toBe("1");

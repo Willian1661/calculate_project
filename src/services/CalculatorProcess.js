@@ -1,51 +1,50 @@
-let memory = [];
-let result = "";
-function calculatorProcess(content,visor) {
-	
-	const numbersOperators = () => String(eval((result)));
-	
+let memory = "";
+let sLength;
+
+function CalculatorProcess(content, visor) {
+
+	const firstInteraction = ["%", "/", "*", "+", "-", "S", "C", "="];
+
 	memory += content;
+
+	if ((firstInteraction.includes(memory[0]) && memory.length < 2) || memory.includes("C")) {
+		memory = "";
+
+	}
+	
+	if (memory[0] == ".") {
+		memory = "0.";
+	}
 
 	if (memory.includes("=")) {
 
-		result = memory.slice(0,-1);
-
-		if (memory.includes("+")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("-")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("*")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("/")) {
-			memory = numbersOperators();
-		}
+		memory = memory.slice(0, -1);
 
 		if (memory.includes("%")) {
 			memory =
-    String(eval((memory[0]+memory[1]))*("0.0"+memory[3]));
+				String(eval(memory.replace(/[%]/g, "/100*")));
+		}
+
+		memory = String(eval(memory));
+	}
+
+	if (memory.includes("S")) { //S means Signal for change number's signal
+
+		sLength = memory.match(/S/g).length;
+
+		memory = memory.slice(0, -sLength);
+
+		for (let i = 0; i < sLength; i++) {
+			memory = String(eval(memory * -1));
+
 		}
 	}
 
-	if (memory.includes("C")) {
-		memory = "";
-	}
-
-	if (memory.includes("+/-")) {
-		memory = String(eval((memory[0])*-1));
-	}
-
 	if (memory.includes("D")) {
-		memory = memory.slice(0,-2);
+		memory = memory.slice(0, -2);
 	}
 
 	visor(memory);
-
 }
 
-module.exports = calculatorProcess;
+module.exports = CalculatorProcess;
