@@ -5,13 +5,15 @@ function CalculatorProcess(content, visor) {
 
 	const firstInteraction = ["%", "/", "*", "+", "-", "S", "C", "="];
 
+	const conversion = (string) => String(eval(string));
+
 	memory += content;
 
 	if ((firstInteraction.includes(memory[0]) && memory.length < 2) || memory.includes("C")) {
 		memory = "";
 
 	}
-	
+
 	if (memory[0] == ".") {
 		memory = "0.";
 	}
@@ -21,11 +23,11 @@ function CalculatorProcess(content, visor) {
 		memory = memory.slice(0, -1);
 
 		if (memory.includes("%")) {
-			memory =
-				String(eval(memory.replace(/[%]/g, "/100*")));
+
+			memory = memory.replace(/[%]/g, "/100*");
 		}
 
-		memory = String(eval(memory));
+		memory = conversion(memory)
 	}
 
 	if (memory.includes("S")) { //S means Signal for change number's signal
@@ -35,7 +37,7 @@ function CalculatorProcess(content, visor) {
 		memory = memory.slice(0, -sLength);
 
 		for (let i = 0; i < sLength; i++) {
-			memory = String(eval(memory * -1));
+			memory = conversion(memory*-1)
 
 		}
 	}
