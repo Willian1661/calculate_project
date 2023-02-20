@@ -31,7 +31,7 @@ Then, if you want to automatically save your changes you need to run and after t
 
 ### You just successfully generated your page!
 
-<img src="pictures/calculator.png" width="240">
+<img src="doc/calculator.png" width="240">
 
 
 One more thing we should run in terminal, are the tests. Following the next steps to run Jest.
@@ -39,7 +39,7 @@ One more thing we should run in terminal, are the tests. Following the next step
 ## Runnig test with Jest
 We can run the tests with `npm run test` command line, it will run `jest --coverage` and generate a `/coverage` folder and it'll show this in your terminal:
 
-<img src="pictures/show_test_pass.png" width="300">
+<img src="doc/show_test_pass.png" width="300">
 
 Now, since we have our page builded and tests passed we just need to run Eslint in our code to maintain a pattern.
 Run `npm run lint:fix` command line, it'll trigger eslint only on `src/.` , but this can be changed on `.eslintrc.js` configuration.
