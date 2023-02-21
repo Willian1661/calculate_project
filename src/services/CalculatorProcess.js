@@ -1,52 +1,43 @@
 let memory = "";
-let sLength;
+let sLenth = 0;
 
 function CalculatorProcess(content, visor) {
+	const PLUS_MINUS_SIGNAL = "S";
+	const convertion = (string) => String(eval(string))
+	const firstInterations = ["S", "+", "-", "/", "%", "*", "="];
 
-	const firstInteraction = ["%", "/", "*", "+", "-", "S", "C", "="];
+	memory += content
 
-	const conversion = (string) => String(eval(string));
-
-	memory += content;
-
-	if ((firstInteraction.includes(memory[0]) && memory.length < 2) || memory.includes("C")) {
-		memory = "";
-
-	}
-
-	if (memory[0] == ".") {
-		memory = "0.";
-	}
-
+	firstInterations.forEach(interation => {
+		if (memory.includes(interation) && memory.length < 2) {
+			memory = ""
+		}
+	});
+	
 	if (memory.includes("=")) {
-
-		memory = memory.slice(0, -1);
+		memory = memory.slice(0, -1)
 
 		if (memory.includes("%")) {
-
-			memory = memory.replace(/[%]/g, "/100*");
+			memory = memory.replace("%", "/100*")
 		}
-
-		memory = conversion(memory)
+		memory = convertion(memory)
 	}
 
-	if (memory.includes("S")) { //S means Signal for change number's signal
-
-		sLength = memory.match(/S/g).length;
-
-		memory = memory.slice(0, -sLength);
-
-		for (let i = 0; i < sLength; i++) {
-			memory = conversion(memory*-1)
-
-		}
+	if (memory.includes("C")) {
+		memory = ""
 	}
+	
+	if (memory.includes(PLUS_MINUS_SIGNAL)) {
+		sLenth = memory.match(/S/g).length
 
+		memory = memory.slice(0, -sLenth)
+
+		memory = memory = convertion(memory*-1)
+	}
 	if (memory.includes("D")) {
-		memory = memory.slice(0, -2);
+
+		memory = memory.slice(0, -2)
 	}
-
-	visor(memory);
+	visor(memory)
 }
-
 module.exports = CalculatorProcess;
