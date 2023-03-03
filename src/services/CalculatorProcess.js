@@ -1,51 +1,38 @@
-let memory = [];
-let result = "";
-function calculatorProcess(content,visor) {
-	
-	const numbersOperators = () => String(eval((result)));
-	
-	memory += content;
+let memory = "", process = "";
 
-	if (memory.includes("=")) {
+function CalculatorProcess(content, visor) {
+	const PLUS_MINUS_SIGNAL = "S";
+	const convertion = (string) => String(eval(string))
+	const firstInterations = [PLUS_MINUS_SIGNAL, "+", "-", "/", "%", "*", "="];
+	const clear = () => process = memory = "";
 
-		result = memory.slice(0,-1);
+	process = memory += content
 
-		if (memory.includes("+")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("-")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("*")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("/")) {
-			memory = numbersOperators();
-		}
-
-		if (memory.includes("%")) {
-			memory =
-    String(eval((memory[0]+memory[1]))*("0.0"+memory[3]));
-		}
+	if (firstInterations.includes(memory) || content === "C") {
+		clear();
 	}
 
-	if (memory.includes("C")) {
-		memory = "";
+	if (process.includes("%")) {
+		process = process.replace("%", "/100*")
 	}
 
-	if (memory.includes("+/-")) {
-		memory = String(eval((memory[0])*-1));
+	if (process.includes("=")) {
+
+		memory = convertion(process.slice(0, -1))
 	}
 
-	if (memory.includes("D")) {
-		memory = memory.slice(0,-2);
+	if (process.includes(PLUS_MINUS_SIGNAL)) {
+
+		process = process.slice(0, -1)
+
+		memory = convertion(process * -1)
 	}
 
-	visor(memory);
+	if (content === "D") {
 
+		memory = process.slice(0, -2)
+	}
+
+	visor(memory)
 }
-
-module.exports = calculatorProcess;
+module.exports = CalculatorProcess;
