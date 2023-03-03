@@ -48,7 +48,7 @@ exports[`calculator component is rendering properly 1`] = `
           </button>
           <button
             className="button is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning"
-            data-value="+/-"
+            data-value="S"
           >
             <svg
               className="tabler-icon tabler-icon-exposure-minus-1"
@@ -476,8 +476,9 @@ exports[`calculator component is rendering properly 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"
+                d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z"
                 fill="currentColor"
+                strokeWidth="0"
               />
             </svg>
           </button>
