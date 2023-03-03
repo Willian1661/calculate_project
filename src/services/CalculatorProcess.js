@@ -1,39 +1,36 @@
 let memory = "", process = "";
-let sLenth = 0;
 
 function CalculatorProcess(content, visor) {
 	const PLUS_MINUS_SIGNAL = "S";
 	const convertion = (string) => String(eval(string))
-	const firstInterations = ["S", "+", "-", "/", "%", "*", "="];
+	const firstInterations = [PLUS_MINUS_SIGNAL, "+", "-", "/", "%", "*", "="];
 	const clear = () => process = memory = "";
 
-	memory += content
+	process = memory += content
 
-	if (firstInterations.includes(memory) && memory.length < 2 || content === "C") {
+	if (firstInterations.includes(memory) || content === "C") {
 		clear();
 	}
 
-	if (memory.includes("=")) {
-		process = memory.slice(0, -1)
-
-		if (memory.includes("%")) {
-			process = process.replace("%", "/100*")
-		}
-
-		memory = convertion(process)
+	if (process.includes("%")) {
+		process = process.replace("%", "/100*")
 	}
 
-	if (memory.includes(PLUS_MINUS_SIGNAL)) {
-		sLenth = memory.match(/S/g).length
+	if (process.includes("=")) {
 
-		memory = memory.slice(0, -sLenth)
+		memory = convertion(process.slice(0, -1))
+	}
 
-		memory = convertion(memory * -1)
+	if (process.includes(PLUS_MINUS_SIGNAL)) {
+
+		process = process.slice(0, -1)
+
+		memory = convertion(process * -1)
 	}
 
 	if (content === "D") {
 
-		memory = memory.slice(0, -2)
+		memory = process.slice(0, -2)
 	}
 
 	visor(memory)
