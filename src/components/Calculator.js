@@ -38,7 +38,7 @@ export default function Calculator(props) {
 							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-danger" data="C">
 								<ClearAllIcon />
 							</Button>
-							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="+/-">
+							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="S">
 								<PlusMinusIcon />
 							</Button>
 							<Button htmlClass="is-medium is-light m-2 is-fullwidth is-one-fifth has-text-warning" data="D">
