@@ -11,16 +11,16 @@ import PercentIcon from "./icons/PercentIcon";
 import PeriodIcon from "./icons/PointIcon";
 import PlusIcon from "./icons/PlusIcon";
 import PlusMinusIcon from "./icons/PlusMinusIcon";
-import Number0Icon from "./icons/Number0Icon"
-import Number1Icon from "./icons/Number1Icon"
-import Number2Icon from "./icons/Number2Icon"
-import Number3Icon from "./icons/Number3Icon"
-import Number4Icon from "./icons/Number4Icon"
-import Number5Icon from "./icons/Number5Icon"
-import Number6Icon from "./icons/Number6Icon"
-import Number7Icon from "./icons/Number7Icon"
-import Number8Icon from "./icons/Number8Icon"
-import Number9Icon from "./icons/Number9Icon"
+import Number0Icon from "./icons/Number0Icon";
+import Number1Icon from "./icons/Number1Icon";
+import Number2Icon from "./icons/Number2Icon";
+import Number3Icon from "./icons/Number3Icon";
+import Number4Icon from "./icons/Number4Icon";
+import Number5Icon from "./icons/Number5Icon";
+import Number6Icon from "./icons/Number6Icon";
+import Number7Icon from "./icons/Number7Icon";
+import Number8Icon from "./icons/Number8Icon";
+import Number9Icon from "./icons/Number9Icon";
 
 export default function Calculator(props) {
 	return (
